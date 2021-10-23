@@ -1,10 +1,10 @@
-import React from "react";
-import MainLayout from "../../components/MainLayout";
+import React from "react"
+import MainLayout from "../../components/MainLayout"
 
 const History = () => {
 	const historyArray = [
 		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-	];
+	]
 
 	return (
 		<MainLayout>
@@ -55,7 +55,7 @@ const History = () => {
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default History;
+export default History

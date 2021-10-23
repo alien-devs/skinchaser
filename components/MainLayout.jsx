@@ -9,10 +9,12 @@ const MainLayout = ({ children, title = 'Skinchaser' }) => {
                 <title>{title}</title>
             </Head>
             <Header />
-            <Chat />
-            <main>
-                {children}
-            </main>
+            <div className="content">
+                <Chat />
+                <main>
+                    {children}
+                </main>
+            </div>
         </>
     )
 }

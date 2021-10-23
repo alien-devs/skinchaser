@@ -27,7 +27,6 @@
 }
 
 .history_page_list {
-    overflow-y: scroll;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-gap: 24px;
@@ -41,10 +40,12 @@
 	padding: 24px 24px 33px 24px;
 	background: #1a1d26;
 }
+
 .history_page_card_bottom {
 	padding: 10px 19px;
 	background: #212530;
 }
+
 .history_page_card_top_row {
 	display: flex;
 	justify-content: space-between;
@@ -86,6 +87,7 @@
     @include history_page_card;
     padding: 19px 0;
 }
+
 .history_page_card_time {
     font-size: 13px;
     color: #4B546B;

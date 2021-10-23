@@ -1,5 +1,5 @@
-import React from "react";
-import MainLayout from "../../components/MainLayout";
+import React from "react"
+import MainLayout from "../../components/MainLayout"
 
 const Faq = () => {
 	return (
@@ -100,7 +100,7 @@ const Faq = () => {
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Faq;
+export default Faq
