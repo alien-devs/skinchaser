@@ -1,7 +1,5 @@
 @import "history.scss";
 @import "faq.scss";
-@import "profile.scss";
-@import "support.scss";
 
 * {
     margin: 0;
@@ -21,6 +19,7 @@ button {
     outline: none;
     cursor: pointer;
     transition: all .3s ease;
+    background: transparent;
 }
 
 a {
@@ -90,4 +89,16 @@ main {
     padding: 24px;
     padding-right: 400px;
     overflow-y: auto;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: 0;
+    background: transparent;
+    outline: none;
+    color: #fff;
 }
