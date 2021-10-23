@@ -1,0 +1,109 @@
+.profile_page {
+	display: grid;
+	grid-template-columns: auto 347px;
+	grid-column-gap: 25px;
+}
+
+.profile_info_list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 25px;
+}
+.profile_left {
+	display: flex;
+	flex-direction: column;
+}
+
+.profile_info_card {
+	height: 191px;
+	border: 1px dashed #484a60;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.profile_info_card_title {
+	font-size: 13px;
+	color: #575c74;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+.profile_info_card_text {
+	font-weight: bold;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+.profile_info_card_text img {
+	margin-right: 8px;
+}
+.profile_info_card_image_block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 16px;
+	height: 72px;
+}
+
+.profile_inventory {
+	background: #1a1d26;
+	padding: 24px;
+	margin-top: 25px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.profile_inventory_list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 14px;
+}
+.profile_inventory_card_row {
+	display: flex;
+	justify-content: space-between;
+}
+.profile_inventory_card {
+	display: flex;
+	flex-direction: column;
+	background: #1E222C;
+	border: 1px solid #2d3242;
+	border-radius: 5px;
+    padding: 16px 16px 10px 16px;
+}
+
+.profile_inventory_cost {
+	display: flex;
+	align-items: center;
+	color: #c3b321;
+	font-size: 13px;
+	font-weight: 700;
+}
+.profile_inventory_cost img {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+.profile_inventory_state {
+	color: #575c74;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.profile_inventory_image {
+	margin: 0 auto 24px;
+}
+.profile_inventory_item_name {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+.profile_inventory_item_skin {
+	text-align: center;
+	font-size: 13px;
+	color: #75777a;
+	margin-top: 2px;
+}
