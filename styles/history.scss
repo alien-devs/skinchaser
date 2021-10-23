@@ -1,0 +1,99 @@
+@mixin history_page_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+	border-radius: 5px;
+
+}
+
+.history_page {
+	padding-right: 81px;
+}
+
+.history_page_cache_title {
+	font-size: 20px;
+	margin-bottom: 24px;
+	width: 100%;
+	padding: 9px 0;
+	background: #1a1d26;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #737479;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.history_page_list {
+    overflow-y: scroll;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 24px;
+}
+
+.history_page_card {
+	border-radius: 5px;
+}
+
+.history_page_card_top {
+	padding: 24px 24px 33px 24px;
+	background: #1a1d26;
+}
+.history_page_card_bottom {
+	padding: 10px 19px;
+	background: #212530;
+}
+.history_page_card_top_row {
+	display: flex;
+	justify-content: space-between;
+    height: 44px;
+}
+
+.history_page_card_x {
+	background: #1d40f0;
+    padding: 0 25px;
+    height: 100%;
+    @include history_page_card;
+    font-size: 15px!important;
+    text-transform: uppercase;
+}
+
+.history_page_card_peoples {
+    padding: 0 18px;
+    @include history_page_card;
+    background: #212530;
+    
+    color: #ADB2BD; 
+    & img {
+        margin-right: 4px;
+    }
+}
+
+.history_page_card_cash-won {
+    margin-top: 24px;
+    background: #212530;
+    padding: 12px 0;
+    @include history_page_card;
+    & img {
+        margin-right: 4px;
+    }
+}
+
+.history_page_card_info {
+    background: #2C303A;
+    @include history_page_card;
+    padding: 19px 0;
+}
+.history_page_card_time {
+    font-size: 13px;
+    color: #4B546B;
+    margin-right: 14px;
+    font-weight: 500;
+}
+
+.history_page_card_order {
+    font-size: 13px;
+    color: #5E626B;
+}
