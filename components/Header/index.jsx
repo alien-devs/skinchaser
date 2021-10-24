@@ -17,7 +17,7 @@ const Header = () => {
 					</button>
 					<button id={s.lang} className="secondary-btn">
 						<img
-							src="/img/header/flags/uk.png"
+							src="/img/general/flags/uk.png"
 							alt=""
 							className={s.country}
 						/>
@@ -76,20 +76,20 @@ const links = [
 		active: true,
 	},
 	{
-		name: "Crash",
-		path: "crash",
+		name: "Wheel",
+		path: "wheel",
 	},
 	{
-		name: "Crash",
-		path: "crash",
+		name: "Jackpot",
+		path: "jackpot",
 	},
 	{
-		name: "Crash",
-		path: "crash",
+		name: "FAQ",
+		path: "faq",
 	},
 	{
-		name: "Crash",
-		path: "crash",
+		name: "Поддержка",
+		path: "support",
 	},
 ];
 

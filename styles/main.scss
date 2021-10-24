@@ -5,10 +5,12 @@
 @import "profile.scss";
 @import "shop.scss";
 @import "wheel.scss";
+@import "crash.scss";
 // CSS ДЛЯ КОМПОНЕНТ
 @import "../components/Inventory/main.scss";
 @import "../components/modals/Deposit/main.scss";
 @import "../components/Statistics/main.scss";
+@import "../components/modals/Settings/main.scss";
 
 * {
 	margin: 0;

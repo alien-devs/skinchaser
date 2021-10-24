@@ -1,10 +1,10 @@
-import MainLayout from "../components/MainLayout"
-import History from "./history"
+import MainLayout from "../components/MainLayout";
+import Crash from "./crash";
 
 const Home = () => {
-    return (
-        <History />
-    )
-}
+	return (
+		<Crash />
+	);
+};
 
-export default Home
+export default Home;

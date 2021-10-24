@@ -73,10 +73,10 @@
 .profile_inventory_card {
 	display: flex;
 	flex-direction: column;
-	background: #1E222C;
+	background: #1e222c;
 	border: 1px solid #2d3242;
 	border-radius: 5px;
-    padding: 16px 16px 10px 16px;
+	padding: 16px 16px 10px 16px;
 }
 
 .profile_inventory_cost {
@@ -102,6 +102,7 @@
 
 .profile_inventory_image {
 	margin: 0 auto 24px;
+	width: 100%;
 }
 
 .profile_inventory_item_name {
@@ -117,3 +118,71 @@
 	color: #75777a;
 	margin-top: 2px;
 }
+
+.profile_withdraw {
+	background: #1a1d26;
+	padding: 32px 35px;
+	border-radius: 5px;
+}
+.profile_right {
+	width: 100%;
+}
+.profile_withdraw {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.profile_withdraw_logo {
+	width: 152px;
+	height: 152px;
+	background: cyan;
+	margin-bottom: 32px;
+}
+
+.profile_withdraw_row {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+
+	input {
+		padding-left: 16px;
+		width: 230px;
+		height: 100%;
+		border: 1px solid #2e3340;
+		box-sizing: border-box;
+		border-radius: 5px;
+
+		&::placeholder {
+			font-size: 13px;
+			color: #575c74;
+		}
+	}
+	span {
+		width: 40px;
+		height: 100%;
+		background: #2f3241;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 8px;
+	}
+}
+
+.referal_title {
+	color: #575c74;
+	font-size: 15px;
+	margin-bottom: 32px;
+}
+
+.profile_referal {
+	background: #1a1d26;
+	border-radius: 5px;
+	padding: 32px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 24px;
+}
+

@@ -1,0 +1,302 @@
+.crash-page {
+	display: grid;
+	grid-template-columns: 398px 1fr;
+	grid-column-gap: 24px;
+}
+
+.crash_right {
+	display: grid;
+	grid-template-rows: 72px 350px auto;
+	grid-row-gap: 24px;
+}
+
+.crash_row {
+	display: grid;
+	grid-template-columns: 673px 1fr;
+	grid-column-gap: 24px;
+}
+
+.crash_main {
+	background: url("/img/crash/bg_main.png");
+	padding: 24px;
+	position: relative;
+}
+
+.crash_prev_bets {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 440px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: linear-gradient(
+			270deg,
+			#1d2938 0%,
+			rgba(29, 41, 56, 0) 100%
+		);
+		width: 102px;
+		height: 26px;
+	}
+}
+
+.crash_prev_bet {
+	height: 26px;
+	border-radius: 5px;
+	padding: 0 9px;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+
+	&.blue {
+		background: #1d40f0;
+	}
+	&.purple {
+		background: #6622e1;
+	}
+	&.pink {
+		background: #ea18b8;
+	}
+	&.yellow {
+		background: #cbbb18;
+	}
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
+}
+
+.crash_bet_know {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	width: 68px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 600;
+	height: 67px;
+	background: url("/img/crash/x.png") center no-repeat;
+}
+
+.crash_set_bet {
+	width: 100%;
+	background: #1a1d26;
+	border-radius: 5px;
+	padding: 24px;
+}
+
+.crash_set_bet_row {
+	display: flex;
+}
+
+.crash_autostop {
+	h5 {
+		margin-bottom: 16px;
+	}
+
+	input {
+		padding: 16px;
+		width: 120px;
+		height: 40px;
+		background: #2f3241;
+		border-radius: 5px;
+		font-weight: 600;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+}
+
+.crash_beted_items {
+	margin-left: 39px;
+	h2 {
+		font-weight: 600;
+		color: #575c74;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.crash_set_default {
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.crash_set_default_card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	height: 40px;
+	width: 64px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	&.light {
+		background: #2f3241;
+	}
+	&.dark {
+		background: #2a2c38;
+	}
+	&.yellow {
+		background: #aea11a;
+	}
+}
+
+.crash_set_line {
+	margin: 16px 0 24px;
+	height: 1px;
+	width: 100%;
+	background: #31343c;
+}
+
+.crash_winning {
+	padding: 0 32px;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.crash_winning_line {
+	width: 55px;
+	height: 5px;
+	position: relative;
+	top: 15px;
+}
+.crash_winning_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 14px;
+		font-weight: 600;
+		color: #575c74;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	img {
+		width: 70px;
+		height: 40px;
+	}
+}
+
+.crash_current_bets {
+	display: grid;
+	grid-template-columns: repeat(3, 335px);
+	grid-gap: 24px;
+}
+.crash_current_bet {
+	background: #1a1d26;
+	border-radius: 5px;
+}
+.card_current_bet_info {
+	display: flex;
+	align-items: center;
+}
+.crash_current_heading {
+	padding: 10px 24px 16px;
+}
+
+.crash_bet_nickname {
+	font-size: 14px;
+	font-weight: 600;
+}
+.card_current_bet_stats {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	h2 {
+		font-size: 14px;
+		font-weight: 600;
+	}
+	span {
+		margin-top: 9px;
+		display: flex;
+		align-items: center;
+		font-size: 13px;
+		color: #c3b321;
+		font-weight: bold;
+		img {
+			margin-right: 4px;
+		}
+	}
+}
+
+.crash_bet_logo {
+	width: 82px;
+	height: 86px;
+}
+
+.card_current_bet_row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+	img {
+		width: 61px;
+		height: 42px;
+	}
+}
+
+.crash_current_footer {
+	height: 74px;
+	position: relative;
+	padding: 11px 24px 11px;
+	background: #212530;
+	border-radius: 0px 0px 5px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&.green {
+		background: url("/img/crash/footer.png") no-repeat;
+	}
+	&.red {
+		background: url("/img/crash/footer2.png") no-repeat;
+	}
+}
+
+.crash_current_column {
+	.ratio {
+		font-size: 16px;
+		font-weight: bold;
+		color: #7afb9e;
+		margin-bottom: 8px;
+	}
+	span {
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 5px;
+			width: 28px;
+			height: 28px;
+		}
+	}
+}
+
+.crash_current_btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: #2c303a;
+	height: 100%;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 13px;
+	color: #5e626b;
+    text-transform: uppercase;
+	img {
+		margin-right: 8px;
+	}
+}
