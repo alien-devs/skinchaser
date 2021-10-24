@@ -1,7 +1,4 @@
 
-import React, {
-    useState
-} from 'react'
 import Head from 'next/head'
 import Chat from './Chat'
 import Header from './Header'
@@ -15,7 +12,7 @@ const MainLayout = ({ children, title = 'Skinchaser' }) => {
                 <title>{title}</title>
             </Head>
             <Header/>
-            <Deposit />
+            {/* <Deposit /> */}
             <div className="content">
                 <Chat />
                 <main>
