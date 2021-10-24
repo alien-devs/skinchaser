@@ -55,7 +55,7 @@ const Support = () => {
 						<br /> У вас есть какие-нибудь предложения ?
 					</p>
 					{<div></div>}
-					<button className="support_left_btn">
+					<button className="primary-btn blue" style={{marginTop: "auto"}}>
 						ЗАДАТЬ ВОПРОС / ВАШИ ПРЕДЛОЖЕНИЯ
 					</button>
 				</div>
