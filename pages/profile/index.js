@@ -1,7 +1,7 @@
-import MainLayout from "../../components/MainLayout";
+import MainLayout from "../../components/MainLayout"
 
 const Profile = () => {
-	const itemsArray = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+	const itemsArray = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 	return (
 		<MainLayout>
@@ -76,43 +76,45 @@ const Profile = () => {
 					</div>
 					<div className="profile_inventory">
 						<div className="profile_inventory_list">
-							{itemsArray.map((key) => (
-								<div
-									className="profile_inventory_card"
-									key={key}
-								>
-									<div className="profile_inventory_card_row">
-										<p className="profile_inventory_cost">
-											<img
-												src="/img/profile/coin.png"
-												alt=""
-											/>
-											54.37
-										</p>
-										<p className="profile_inventory_state">
-											Fn
-										</p>
+							{
+								itemsArray.map(key => (
+									<div
+										className="profile_inventory_card"
+										key={key}
+									>
+										<div className="profile_inventory_card_row">
+											<p className="profile_inventory_cost">
+												<img
+													src="/img/profile/coin.png"
+													alt=""
+												/>
+												54.37
+											</p>
+											<p className="profile_inventory_state">
+												Fn
+											</p>
+										</div>
+										<img
+											src="/img/profile/item.png"
+											alt=""
+											className="profile_inventory_image"
+										/>
+										<h2 className="profile_inventory_item_name">
+											Tec 9
+										</h2>
+										<h2 className="profile_inventory_item_skin">
+											Терсаса
+										</h2>
 									</div>
-									<img
-										src="/img/profile/item.png"
-										alt=""
-										className="profile_inventory_image"
-									/>
-									<h2 className="profile_inventory_item_name">
-										Tec 9
-									</h2>
-									<h2 className="profile_inventory_item_skin">
-										Терсаса
-									</h2>
-								</div>
-							))}
+								))
+							}
 						</div>
 					</div>
 				</div>
 				<div className="profile_right"></div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Profile;
+export default Profile

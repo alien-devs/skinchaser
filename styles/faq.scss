@@ -14,7 +14,7 @@
 	width: 100%;
 }
 
-.faq_page_card:nth-child(n + 2) {
+.faq_page_card:nth-child(n+2) {
 	margin-top: 8px;
 }
 
@@ -22,6 +22,7 @@
 	font-size: 16px;
 	font-weight: 600;
 }
+
 .faq_page_card_icon_block {
 	background: #2f3241;
 	border-radius: 10px;
@@ -41,6 +42,7 @@
 .faq_page_card.opened .faq_page_card_row {
 	margin-bottom: 24px;
 }
+
 .faq_page_card.opened .faq_page_card_icon_block img {
     transform: rotate(180deg);
 }
@@ -56,6 +58,7 @@
 	font-weight: 600;
 	color: #ced6e2;
 }
+
 .faq_page_card_opened_title {
 	text-transform: uppercase;
 	margin-bottom: 20px;

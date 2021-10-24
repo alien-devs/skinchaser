@@ -1,10 +1,10 @@
-import MainLayout from "../../components/MainLayout";
+import MainLayout from "../../components/MainLayout"
 
 const Shop = () => {
 	const shopArray = [
 		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-	];
+	]
 
 	return (
 		<MainLayout>
@@ -48,34 +48,36 @@ const Shop = () => {
 					</div>
 					<div className="shop_left_line"></div>
 					<div className="shop_left_inventory">
-						{shopArray.map((key) => (
-							<div className="shop_left_inventory_card" key={key}>
-								<div className="shop_left_inventory_card_row">
-									<p className="shop_left_inventory_cost">
-										<img src="/img/shop/coin.png" alt="" />
-										54.37
-									</p>
-									<p className="profile_inventory_state">
-										Fn
-									</p>
+						{
+							shopArray.map(key => (
+								<div className="shop_left_inventory_card" key={key}>
+									<div className="shop_left_inventory_card_row">
+										<p className="shop_left_inventory_cost">
+											<img src="/img/shop/coin.png" alt="" />
+											54.37
+										</p>
+										<p className="profile_inventory_state">
+											Fn
+										</p>
+									</div>
+									<img
+										src="/img/profile/item.png"
+										alt=""
+										className="shop_left_inventory_image"
+									/>
+									<h2 className="shop_left_inventory_item_name">
+										Tec 9
+									</h2>
+									<h2 className="shop_left_inventory_item_skin">
+										Терсаса
+									</h2>
 								</div>
-								<img
-									src="/img/profile/item.png"
-									alt=""
-									className="shop_left_inventory_image"
-								/>
-								<h2 className="shop_left_inventory_item_name">
-									Tec 9
-								</h2>
-								<h2 className="shop_left_inventory_item_skin">
-									Терсаса
-								</h2>
-							</div>
-						))}
+							))
+						}
 					</div>
 					<button
 						className="primary-btn blue"
-						style={{ width: "100%" }}
+						style={{width: "100%"}}
 					>
 						ПОДТВЕРДИТЬ
 					</button>
@@ -92,35 +94,37 @@ const Shop = () => {
 						</p>
 					</div>
 					<div className="shop_right_list">
-						{shopArray.map((key) => (
-							<div className="shop_left_inventory_card" key={key}>
-								<div className="shop_left_inventory_card_row">
-									<p className="shop_left_inventory_cost">
-										<img src="/img/shop/coin.png" alt="" />
-										54.37
-									</p>
-									<p className="profile_inventory_state">
-										Fn
-									</p>
+						{
+							shopArray.map(key => (
+								<div className="shop_left_inventory_card" key={key}>
+									<div className="shop_left_inventory_card_row">
+										<p className="shop_left_inventory_cost">
+											<img src="/img/shop/coin.png" alt="" />
+											54.37
+										</p>
+										<p className="profile_inventory_state">
+											Fn
+										</p>
+									</div>
+									<img
+										src="/img/profile/item.png"
+										alt=""
+										className="shop_left_inventory_image"
+									/>
+									<h2 className="shop_left_inventory_item_name">
+										Tec 9
+									</h2>
+									<h2 className="shop_left_inventory_item_skin">
+										Терсаса
+									</h2>
 								</div>
-								<img
-									src="/img/profile/item.png"
-									alt=""
-									className="shop_left_inventory_image"
-								/>
-								<h2 className="shop_left_inventory_item_name">
-									Tec 9
-								</h2>
-								<h2 className="shop_left_inventory_item_skin">
-									Терсаса
-								</h2>
-							</div>
-						))}
+							))
+						}
 					</div>
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Shop;
+export default Shop

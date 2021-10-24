@@ -1,5 +1,7 @@
+import History from "./history"
+
 const Custom404 = () => {
-    return <h1>404 - Page Not Found</h1>
+    return <History />
 }
 
 export default Custom404

@@ -38,6 +38,17 @@
     padding: 6px 15px;
     background: rgba(47, 50, 65, .5);
     border-radius: 10px;
+    display: flex;
+}
+
+.dot {
+    display: block;
+    border-radius: 50%;
+    background: #63EF13;
+    width: 5px;
+    height: 5px;
+    margin-right: 3px;
+    margin-top: 3px;
 }
 
 .close {
@@ -56,7 +67,7 @@
 }
 
 .messages {
-    padding: 2px 0px 24px 0;
+    padding-top: 2px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -68,7 +79,15 @@
     & > div {
         padding: 16px 0;
         border-bottom: 1px solid #31343C;
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
     }
+}
+
+.messageList {
+    height: calc(100vh - 340px);
+    overflow-y: auto;
 }
 
 .messageText {
@@ -78,6 +97,7 @@
 .sender {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .name {
@@ -108,6 +128,7 @@
     flex-grow: 1;
     display: flex;
     align-items: flex-end;
+    margin-top: 50px;
 }
 
 .send {
@@ -140,5 +161,47 @@
 }
 
 .alert {
-    
+    background: rgba(38, 189, 70, .1);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 48px 17px 21px;
+    margin-top: 16px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        height: 100%;
+        width: 4px;
+        background: #26BD46;
+        box-shadow: 0px 0px 19px rgba(41, 212, 77, 0.46);
+    }
+
+    & > img {
+        width: 55px;
+        min-width: 55px;
+    }
+}
+
+.alertTitle {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.alertText {
+    margin: 8px 0 16px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BAC0D1;
 }

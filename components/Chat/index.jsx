@@ -12,7 +12,10 @@ const Chat = () => {
                         <div className={s.leftHeader}>
                             <div className="center">
                                 <h2>Онлайн чат</h2>
-                                <span className={s.online}>1343</span>
+                                <span className={s.online}>
+                                    <span className={s.dot}></span>
+                                    1343
+                                </span>
                             </div>
                             <span className={s.subtitle}>Правила чата</span>
                         </div>
@@ -22,6 +25,10 @@ const Chat = () => {
                     </div>
                     <div className={s.messages}>
                         <div className={s.messageList}>
+                            <Message />
+                            <Message />
+                            <ChatAlert />
+                            <Message />
                             <Message />
                             <Message />
                             <ChatAlert />

@@ -9,6 +9,7 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 25px;
 }
+
 .profile_left {
 	display: flex;
 	flex-direction: column;
@@ -23,21 +24,25 @@
 	align-items: center;
 	justify-content: center;
 }
+
 .profile_info_card_title {
 	font-size: 13px;
 	color: #575c74;
 	margin-bottom: 8px;
 	text-transform: uppercase;
 }
+
 .profile_info_card_text {
 	font-weight: bold;
 	font-size: 18px;
 	display: flex;
 	align-items: center;
 }
+
 .profile_info_card_text img {
 	margin-right: 8px;
 }
+
 .profile_info_card_image_block {
 	display: flex;
 	align-items: center;
@@ -64,6 +69,7 @@
 	display: flex;
 	justify-content: space-between;
 }
+
 .profile_inventory_card {
 	display: flex;
 	flex-direction: column;
@@ -80,11 +86,13 @@
 	font-size: 13px;
 	font-weight: 700;
 }
+
 .profile_inventory_cost img {
 	width: 20px;
 	height: 20px;
 	margin-right: 8px;
 }
+
 .profile_inventory_state {
 	color: #575c74;
 	font-size: 13px;
@@ -95,12 +103,14 @@
 .profile_inventory_image {
 	margin: 0 auto 24px;
 }
+
 .profile_inventory_item_name {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;
 }
+
 .profile_inventory_item_skin {
 	text-align: center;
 	font-size: 13px;

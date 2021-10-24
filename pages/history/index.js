@@ -19,16 +19,16 @@ const History = () => {
 							<div className="history_page_card">
 								<div className="history_page_card_top">
 									<div className="history_page_card_top_row">
-										<h2 className="history_page_card_x">
+										<button className="history_page_card_x">
 											x5.33
-										</h2>
-										<h2 className="history_page_card_peoples">
+										</button>
+										<button className="history_page_card_peoples">
 											<img
 												src="/img/history/peoples.svg"
 												alt="peoples"
 											/>
 											1 945
-										</h2>
+										</button>
 									</div>
 									<h2 className="history_page_card_cash-won">
 										<img

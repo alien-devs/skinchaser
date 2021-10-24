@@ -1,4 +1,4 @@
-import MainLayout from "../../components/MainLayout";
+import MainLayout from "../../components/MainLayout"
 
 const Support = () => {
 	const supportItems = [
@@ -42,7 +42,7 @@ const Support = () => {
 			text: "Почему то выкидывает после редикта на платежку =(",
 			imgUrl: "/img/support/logo.png",
 		},
-	];
+	]
 
 	return (
 		<MainLayout>
@@ -87,7 +87,7 @@ const Support = () => {
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Support;
+export default Support

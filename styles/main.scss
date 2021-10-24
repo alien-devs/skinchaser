@@ -105,3 +105,14 @@ input {
     outline: none;
     color: #fff;
 }
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    background: transparent;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3A3D4A;
+    border-radius: 10px;
+    width: 3px;
+}

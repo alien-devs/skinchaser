@@ -1,10 +1,9 @@
 import MainLayout from "../components/MainLayout"
+import History from "./history"
 
 const Home = () => {
     return (
-        <MainLayout>
-            
-        </MainLayout>
+        <History />
     )
 }
 
