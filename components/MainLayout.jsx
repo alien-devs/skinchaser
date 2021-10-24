@@ -1,4 +1,3 @@
-
 import Head from 'next/head'
 import Chat from './Chat'
 import Header from './Header'

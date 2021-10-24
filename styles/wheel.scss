@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: 398px 1fr;
 	grid-column-gap: 24px;
-	padding-right: 24px;
 }
 
 .wheel_left {
@@ -84,38 +83,6 @@
 	display: grid;
 	grid-row-gap: 24px;
 	grid-template-rows: 72px 412px 1fr;
-}
-
-.wheel_right_heading {
-	display: grid;
-	grid-template-columns: 192px 1fr 1fr 1fr;
-	grid-column-gap: 19px;
-}
-
-.wheel_metric {
-	height: 100%;
-	padding: 0 25px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background: #1a1d26;
-	border-radius: 5px;
-
-	h2 {
-		display: flex;
-		align-items: center;
-		font-size: 14px;
-		color: #575c74;
-		font-weight: 600;
-		text-transform: uppercase;
-		img {
-			margin-right: 6px;
-		}
-	}
-	p {
-		font-size: 14px;
-		font-weight: 600;
-	}
 }
 
 .wheel_main {

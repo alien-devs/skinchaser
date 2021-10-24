@@ -46,7 +46,7 @@ const Profile = () => {
 								СУММА ВЫИГРЫШЕЙ
 							</h2>
 							<p className="profile_info_card_text">
-								<img src="/img/profile/coin.png" alt="coin" />
+								<img src="/img/general/coin.svg" alt="coin" />
 								4653
 							</p>
 						</div>
@@ -85,7 +85,7 @@ const Profile = () => {
 										<div className="profile_inventory_card_row">
 											<p className="profile_inventory_cost">
 												<img
-													src="/img/profile/coin.png"
+													src="/img/general/coin.svg"
 													alt=""
 												/>
 												54.37

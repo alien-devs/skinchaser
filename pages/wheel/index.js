@@ -1,4 +1,5 @@
 import MainLayout from "../../components/MainLayout";
+import Statistics from "../../components/Statistics";
 
 const Wheel = () => {
 	const wheelBetArray = [1, 1, 1, 1, 1, 1];
@@ -38,43 +39,14 @@ const Wheel = () => {
 					</div>
 				</div>
 				<div className="wheel_right">
-					<div className="wheel_right_heading">
-						<div
-							className="wheel_metric"
-							style={{ padding: "0 17px" }}
-						>
-							<button className="primary-btn blue">
-								История игр
-							</button>
-						</div>
-						<div className="wheel_metric">
-							<h2>
-								<img src="/img/wheel/bank.svg" alt="" />
-								Банк:
-							</h2>
-							<p>$8.61</p>
-						</div>
-						<div className="wheel_metric">
-							<h2>
-								<img src="/img/wheel/game.svg" alt="" />в игре:
-							</h2>
-							<p>641</p>
-						</div>
-						<div className="wheel_metric">
-							<h2>
-								<img src="/img/wheel/items.png" alt="" />
-								предметов:
-							</h2>
-							<p>52</p>
-						</div>
-					</div>
+					<Statistics />
 					<div className="wheel_main"></div>
 					<div className="wheel_bets">
 						<div className="wheel_bet">
 							<div className="wheel_bet_heading">
 								<h2>Ставка 2X</h2>
 								<p>
-									<img src="/img/wheel/coin.png" alt="" />1
+									<img src="/img/general/coin.svg" alt="" />1
 									945
 								</p>
 							</div>
@@ -102,7 +74,7 @@ const Wheel = () => {
 										</div>
 										<p>
 											<img
-												src="/img/wheel/coin.png"
+												src="/img/general/coin.svg"
 												alt=""
 											/>
 											1 945
@@ -115,7 +87,7 @@ const Wheel = () => {
 							<div className="wheel_bet_heading blue">
 								<h2 className="white">Ставка 3X <img src="/img/wheel/win_ratio.png" alt="" /></h2>
 								<p className="white">
-									<img src="/img/wheel/coin.png" alt="" />1
+									<img src="/img/general/coin.svg" alt="" />1
 									945
 								</p>
 							</div>
@@ -143,7 +115,7 @@ const Wheel = () => {
 										</div>
 										<p>
 											<img
-												src="/img/wheel/coin.png"
+												src="/img/general/coin.svg"
 												alt=""
 											/>
 											1 945
@@ -156,7 +128,7 @@ const Wheel = () => {
 							<div className="wheel_bet_heading">
 								<h2>Ставка 2X</h2>
 								<p>
-									<img src="/img/wheel/coin.png" alt="" />1
+									<img src="/img/general/coin.svg" alt="" />1
 									945
 								</p>
 							</div>
@@ -184,7 +156,7 @@ const Wheel = () => {
 										</div>
 										<p>
 											<img
-												src="/img/wheel/coin.png"
+												src="/img/general/coin.svg"
 												alt=""
 											/>
 											1 945

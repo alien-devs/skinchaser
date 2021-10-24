@@ -32,7 +32,7 @@ const History = () => {
 									</div>
 									<h2 className="history_page_card_cash-won">
 										<img
-											src="/img/history/coin.svg"
+											src="/img/general/coin.svg"
 											alt="coin"
 										/>
 										1 945

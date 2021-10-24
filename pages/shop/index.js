@@ -10,26 +10,26 @@ const Shop = () => {
 		<MainLayout>
 			<div className="shop_page">
 				<div className="shop_left">
-					<h1 className="shop_left_title">Инвентарь</h1>
+					<h5 className="shop_left_title">Инвентарь</h5>
 					<div className="shop_cost_row">
 						<div className="shop_cost_block">
 							<h1 className="shop_cost_block_title">Отдаете</h1>
 							<p className="shop_cost_block_text">
-								<img src="/img/shop/coin.png" />
+								<img src="/img/general/coin.svg" />
 								2000
 							</p>
 						</div>
 						<div className="shop_cost_block">
 							<h1 className="shop_cost_block_title">Выбрано</h1>
 							<p className="shop_cost_block_text">
-								<img src="/img/shop/coin.png" />
+								<img src="/img/general/coin.svg" />
 								345
 							</p>
 						</div>
 						<div className="shop_cost_block">
 							<h1 className="shop_cost_block_title">Останется</h1>
 							<p className="shop_cost_block_text">
-								<img src="/img/shop/coin.png" />
+								<img src="/img/general/coin.svg" />
 								1655
 							</p>
 						</div>
@@ -53,7 +53,7 @@ const Shop = () => {
 								<div className="shop_left_inventory_card" key={key}>
 									<div className="shop_left_inventory_card_row">
 										<p className="shop_left_inventory_cost">
-											<img src="/img/shop/coin.png" alt="" />
+											<img src="/img/general/coin.svg" alt="" />
 											54.37
 										</p>
 										<p className="profile_inventory_state">
@@ -99,7 +99,7 @@ const Shop = () => {
 								<div className="shop_left_inventory_card" key={key}>
 									<div className="shop_left_inventory_card_row">
 										<p className="shop_left_inventory_cost">
-											<img src="/img/shop/coin.png" alt="" />
+											<img src="/img/general/coin.svg" alt="" />
 											54.37
 										</p>
 										<p className="profile_inventory_state">

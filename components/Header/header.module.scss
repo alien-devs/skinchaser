@@ -26,6 +26,8 @@
     position: relative;
     background: #20222E;
     padding: 0 24px;
+    justify-content: space-between;
+    width: 422px;
 
     &::before {
         content: "";
@@ -42,7 +44,6 @@
 }
 
 .logo {
-    margin-right: 48px;
     display: flex;
     align-items: center;
 

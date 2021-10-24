@@ -1,10 +1,14 @@
+// CSS ДЛЯ СТРАНИЦ
 @import "history.scss";
 @import "faq.scss";
 @import "support.scss";
-@import "modals.scss";
 @import "profile.scss";
 @import "shop.scss";
 @import "wheel.scss";
+// CSS ДЛЯ КОМПОНЕНТ
+@import "../components/Inventory/main.scss";
+@import "../components/modals/Deposit/main.scss";
+@import "../components/Statistics/main.scss";
 
 * {
 	margin: 0;
@@ -92,7 +96,7 @@ a {
 main {
 	height: 100%;
 	padding: 24px;
-	padding-right: 400px;
+	padding-right: 423px;
 	overflow-y: auto;
 }
 
@@ -129,4 +133,16 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
 	-moz-appearance: textfield;
+}
+
+h5 {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+}
+
+.grey-block {
+    background: #1A1D26;
+    border-radius: 5px;
 }

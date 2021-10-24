@@ -11,7 +11,7 @@ const Chat = () => {
                     <div className={s.header}>
                         <div className={s.leftHeader}>
                             <div className="center">
-                                <h2>Онлайн чат</h2>
+                                <h5>Онлайн чат</h5>
                                 <span className={s.online}>
                                     <span className={s.dot}></span>
                                     1343
