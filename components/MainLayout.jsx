@@ -1,14 +1,21 @@
+
+import React, {
+    useState
+} from 'react'
 import Head from 'next/head'
 import Chat from './Chat'
 import Header from './Header'
+import Deposit from './modals/Deposit'
 
 const MainLayout = ({ children, title = 'Skinchaser' }) => {
+
     return (
         <>
             <Head>
                 <title>{title}</title>
             </Head>
-            <Header />
+            <Header/>
+            <Deposit />
             <div className="content">
                 <Chat />
                 <main>

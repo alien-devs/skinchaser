@@ -1,118 +1,131 @@
 @import "history.scss";
 @import "faq.scss";
 @import "support.scss";
+@import "modals.scss";
 @import "profile.scss";
 @import "shop.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: #FFFFFF;
-    background: #12151C;
+	font-family: "Inter", sans-serif;
+	color: #ffffff;
+	background: #12151c;
 }
 
 button {
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    transition: all .3s ease;
-    background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	background: transparent;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 .primary-btn {
-    padding: 12px 32px;
-    font-weight: 600;
-    font-size: 13px;
-    text-transform: uppercase;
-    background: #23B843;
-    border-radius: 5px;
-    color: #fff;
+	padding: 12px 32px;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+	background: #23b843;
+	border-radius: 5px;
+	color: #fff;
 
-    &:hover {
-        background: #49D066;
-    }
+	&:hover {
+		background: #49d066;
+	}
 
-    &.yellow {
-        background: #8A793B;
-        &:hover {
-            background: #8A793B;
-        }
-    }
+	&.yellow {
+		background: #8a793b;
+		&:hover {
+			background: #8a793b;
+		}
+	}
 
-    &.blue {
-        background: #204FFE;
-        &:hover {
-            background: #4D72FF;
-        }
-    }
+	&.blue {
+		background: #204ffe;
+		&:hover {
+			background: #4d72ff;
+		}
+	}
 }
 
 .secondary-btn {
-    background: #2F3241;
-    border-radius: 10px;
-    height: 40px;
-    display: flex;
-    align-items: center;
+	background: #2f3241;
+	border-radius: 10px;
+	height: 40px;
+	display: flex;
+	align-items: center;
 
-    &:hover {
-        background: #2A2C38;
-    }
+	&:hover {
+		background: #2a2c38;
+	}
 
-    &:active {
-        background: #3A3D50;
-    }
+	&:active {
+		background: #3a3d50;
+	}
 
-    &.selected {
-        background: #AEA11A;
-        border: 1px solid #DAC917;
-    }
+	&.selected {
+		background: #aea11a;
+		border: 1px solid #dac917;
+	}
 }
 
 .content {
-    padding-top: 103px;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    height: 100vh;
+	padding-top: 103px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	height: 100vh;
 }
 
 main {
-    height: 100%;
-    padding: 24px;
-    padding-right: 400px;
-    overflow-y: auto;
+	height: 100%;
+	padding: 24px;
+	padding-right: 400px;
+	overflow-y: auto;
 }
 
 .center {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 input {
-    border: 0;
-    background: transparent;
-    outline: none;
-    color: #fff;
+	border: 0;
+	background: transparent;
+	outline: none;
+	color: #fff;
 }
 
-::-webkit-scrollbar, ::-webkit-scrollbar-track {
-    background: transparent;
-    width: 3px;
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+	background: transparent;
+	width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3A3D4A;
-    border-radius: 10px;
-    width: 3px;
+	background: #3a3d4a;
+	border-radius: 10px;
+	width: 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
 }
