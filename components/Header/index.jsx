@@ -1,7 +1,11 @@
-import React from "react";
-import s from "./header.module.scss";
+import React from "react"
+import s from "./header.module.scss"
+import Link from "next/link"
+import { useRouter } from "next/router"
 
 const Header = () => {
+	const router = useRouter()
+
 	return (
 		<header className={s.header}>
 			<div className={s.main}>
@@ -26,15 +30,18 @@ const Header = () => {
 				</div>
 			</div>
 			<nav>
-				{links.map((i, key) => (
-					<div
-						className={`${s.link} ${i.active ? s.activeLink : ""}`}
-						key={key}
-					>
-						<img src={`/img/header/${i.path}.svg`} alt="" />
-						<span>{i.name}</span>
-					</div>
-				))}
+				{
+					links.map((i, key) => (
+						<Link href={`/${i.path}`} key={key}>
+							<div
+								className={`${s.link} ${router.pathname == `/${i.path}` ? s.activeLink : ""}`}
+							>
+								<img src={`/img/header/${i.path}.svg`} alt="" />
+								<span>{i.name}</span>
+							</div>
+						</Link>
+					))
+				}
 			</nav>
 			<div className={s.right}>
 				<div className={s.mainButtons}>
@@ -46,7 +53,9 @@ const Header = () => {
 						<img src="" alt="" />
 					</div>
 					<div className={s.player}>
-						<span className={s.name}>Tragedy</span>
+						<Link href="/profile">
+							<span className={s.name}>Tragedy</span>
+						</Link>
 						<span className={s.balance}>
 							<img src="/img/general/coin.svg" alt="" />
 							100
@@ -66,8 +75,8 @@ const Header = () => {
 				</div>
 			</div>
 		</header>
-	);
-};
+	)
+}
 
 const links = [
 	{
@@ -91,6 +100,6 @@ const links = [
 		name: "Поддержка",
 		path: "support",
 	},
-];
+]
 
-export default Header;
+export default Header

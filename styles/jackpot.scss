@@ -1,0 +1,89 @@
+.jackpot-page {
+    display: grid;
+    grid-template-columns: 398px 1fr;
+    grid-gap: 24px;
+}
+
+.grey-block {
+    background: #1A1D26;
+    border-radius: 5px;
+}
+
+.jackpot-main {
+    display: grid;
+    grid-template-columns: auto 213px 213px;
+    grid-gap: 24px;
+    margin: 24px 0;
+    height: 172px;
+}
+
+.jackpot__bet {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 24px 17px 17px;
+    
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    .user-name {
+        margin: 0 19px;
+    }
+}
+
+.jackpot__bet-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    * {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.jackpot-bet__chance {
+    font-weight: bold;
+    font-size: 13px;
+    color: #575C74;
+    text-transform: uppercase;
+
+    span {
+        color: #BCC391;
+        margin-left: 5px;
+    }
+}
+
+.jackpot-bet__ticket {
+    margin-left: 24px;
+    background: #292E3A;
+    border-radius: 5px;
+    padding: 10px 22px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #575C74;
+
+    span {
+        color: #fff;
+        margin-left: 5px;
+    }
+}
+
+.jackpot__bet-items {
+    margin-top: 14px;
+}
+
+.jackpot-block {
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button {
+        width: 100%;
+    }
+
+    .user-name {
+        margin-top: 5px;
+    }
+}

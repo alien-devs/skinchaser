@@ -6,10 +6,12 @@
 @import "shop.scss";
 @import "wheel.scss";
 @import "crash.scss";
+@import "jackpot.scss";
 // CSS ДЛЯ КОМПОНЕНТ
 @import "../components/Inventory/main.scss";
 @import "../components/modals/Deposit/main.scss";
 @import "../components/Statistics/main.scss";
+@import "../components/Item/main.scss";
 @import "../components/modals/Settings/main.scss";
 
 * {
@@ -63,6 +65,11 @@ a {
 		&:hover {
 			background: #4d72ff;
 		}
+	}
+
+	&.disabled {
+		background: #292E3A;
+		color: #575C74;
 	}
 }
 
@@ -147,4 +154,22 @@ h5 {
 .grey-block {
     background: #1A1D26;
     border-radius: 5px;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.user-balance {
+    font-weight: bold;
+    font-size: 13px;
+    color: #C4B321;
+	display: flex;
+	align-items: center;
+
+    img {
+        width: 19px;
+        margin-right: 4px;
+    }
 }

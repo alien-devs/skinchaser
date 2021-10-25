@@ -1,11 +1,14 @@
 import MainLayout from "../../components/MainLayout";
 import Statistics from "../../components/Statistics";
+import Inventory from "../../components/Inventory";
 
 const Crash = () => {
 	return (
 		<MainLayout>
 			<div className="crash-page">
-				<div className="crash_left"></div>
+				<div className="crash_left">
+					<Inventory />
+				</div>
 				<div className="crash_right">
 					<Statistics />
 					<div className="crash_row">

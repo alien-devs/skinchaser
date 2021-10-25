@@ -65,59 +65,6 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-gap: 14px;
 }
-.profile_inventory_card_row {
-	display: flex;
-	justify-content: space-between;
-}
-
-.profile_inventory_card {
-	display: flex;
-	flex-direction: column;
-	background: #1e222c;
-	border: 1px solid #2d3242;
-	border-radius: 5px;
-	padding: 16px 16px 10px 16px;
-}
-
-.profile_inventory_cost {
-	display: flex;
-	align-items: center;
-	color: #c3b321;
-	font-size: 13px;
-	font-weight: 700;
-}
-
-.profile_inventory_cost img {
-	width: 20px;
-	height: 20px;
-	margin-right: 8px;
-}
-
-.profile_inventory_state {
-	color: #575c74;
-	font-size: 13px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.profile_inventory_image {
-	margin: 0 auto 24px;
-	width: 100%;
-}
-
-.profile_inventory_item_name {
-	text-transform: uppercase;
-	font-size: 13px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.profile_inventory_item_skin {
-	text-align: center;
-	font-size: 13px;
-	color: #75777a;
-	margin-top: 2px;
-}
 
 .profile_withdraw {
 	background: #1a1d26;

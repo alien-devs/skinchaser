@@ -1,3 +1,4 @@
+import Inventory from "../../components/Inventory";
 import MainLayout from "../../components/MainLayout";
 import Statistics from "../../components/Statistics";
 
@@ -37,6 +38,7 @@ const Wheel = () => {
 							СДЕЛАТЬ СТАВКУ
 						</button>
 					</div>
+					<Inventory />
 				</div>
 				<div className="wheel_right">
 					<Statistics />
