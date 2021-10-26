@@ -4,7 +4,7 @@ import Header from './Header'
 import Deposit from './modals/Deposit'
 import Settings from './modals/Settings'
 
-const MainLayout = ({ children, title = 'Skinchaser' }) => {
+const MainLayout = ({ children, hideChat, title = 'Skinchaser' }) => {
 
     return (
         <>
@@ -14,7 +14,7 @@ const MainLayout = ({ children, title = 'Skinchaser' }) => {
             <Header/>
             {/* <Deposit /> */}
             {/* <Settings /> */}
-            <div className="content">
+            <div className={`content ${hideChat ? "full-width" : ""}`}>
                 <Chat />
                 <main>
                     {children}

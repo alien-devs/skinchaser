@@ -1,12 +1,15 @@
 import Inventory from "../../components/Inventory"
 import MainLayout from "../../components/MainLayout"
 import Statistics from "../../components/Statistics"
+import { ar } from "../../data/arrays"
 
 const Jackpot = () => {
     const bets = [1, 1, 1, 1, 1]
 
     return (
-        <MainLayout>
+        <MainLayout
+            hideChat
+        >
             <div className="jackpot-page">
                 <div>
                     <Inventory />
@@ -14,8 +17,39 @@ const Jackpot = () => {
                 <div>
                     <Statistics />
                     <div className="jackpot-main">
-                        <div className="grey-block">
-                            1
+                        <div className="jackpot-roulette grey-block">
+                            <div className="jackpot-avas">
+                                <ul>
+                                    {
+                                        ar.map(i => (
+                                            <li>
+                                                <img src="/img/support/logo.png" alt="" />
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+                            <div className="jackpot-roulette__content">
+                                <div>
+                                    <span className="jackpot-roulette__last">
+                                        Последние 100
+                                    </span>
+                                    <div className="jackpot-roulette__results">
+                                        <span className="blue">51</span>
+                                        <span className="green">34</span>
+                                        <span className="yellow">23</span>
+                                    </div>
+                                </div>
+                                <div className="status">Крутится</div>
+                                <div className="jackpot-roulette__previous">
+                                    <span className="blue"></span>
+                                    <span></span>
+                                    <span className="blue"></span>
+                                    <span className="blue"></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
                         </div>
                         <div className="jackpot-block grey-block">
                             <h5>Авто-вывод</h5>
@@ -58,7 +92,7 @@ const Jackpot = () => {
                                             <h2 className="user-name">
                                                 DigitalNox Design
                                             </h2>
-                                            <span className="user-name">
+                                            <span className="user-balance">
                                                 <img src="/img/general/coin.svg" alt="" />
                                                 100
                                             </span>

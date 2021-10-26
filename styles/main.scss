@@ -25,6 +25,7 @@ body {
 	font-family: "Inter", sans-serif;
 	color: #ffffff;
 	background: #12151c;
+	overflow-x: hidden;
 }
 
 button {
@@ -102,11 +103,32 @@ a {
 	height: 100vh;
 }
 
+li {
+	list-style-type: none;
+}
+
 main {
 	height: 100%;
 	padding: 24px;
 	padding-right: 423px;
 	overflow-y: auto;
+}
+
+.full-width {
+	main {
+		padding-right: 24px;
+	}
+
+	.chat {
+		transform: translateX(100%);
+	}
+
+	.chat-switcher {
+		position: absolute;
+		top: 134px;
+		left: 0;
+		transform: translateX(-100%);
+	}
 }
 
 .center {
