@@ -3,7 +3,7 @@ import s from "./header.module.scss"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
-const Header = () => {
+const Header = (props) => {
 	const router = useRouter()
 
 	return (
@@ -45,7 +45,10 @@ const Header = () => {
 			</nav>
 			<div className={s.right}>
 				<div className={s.mainButtons}>
-					<button className="primary-btn">Пополнить</button>
+					<button
+						className="primary-btn"
+						onClick={props.openDepositModal}
+					>Пополнить</button>
 					<button className="primary-btn yellow">Магазин</button>
 				</div>
 				<div className={s.profile}>
@@ -63,7 +66,10 @@ const Header = () => {
 					</div>
 				</div>
 				<div className={s.buttons}>
-					<button className="secondary-btn">
+					<button
+						className="secondary-btn"
+						onClick={props.openSettingsModal}
+					>
 						<img src="/img/header/settings.svg" alt="" />
 					</button>
 					<button className="secondary-btn">

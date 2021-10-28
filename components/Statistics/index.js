@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Statistics = () => {
     return (
         <div className="statistics">
@@ -5,9 +7,11 @@ const Statistics = () => {
                 className="statistics_metric"
                 style={{padding: "0 17px"}}
             >
-                <button className="primary-btn blue">
-                    История игр
-                </button>
+                <Link href="/history">
+                    <button className="primary-btn blue">
+                        История игр
+                    </button>
+                </Link>
             </div>
             <div className="statistics_metric">
                 <h2>

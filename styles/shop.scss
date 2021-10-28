@@ -36,12 +36,14 @@
 	align-items: center;
 	flex-direction: column;
 }
+
 .shop_cost_block_title {
 	font-weight: bold;
 	font-size: 13px;
 	margin-bottom: 6px;
 	text-transform: uppercase;
 }
+
 .shop_cost_block_text {
 	display: flex;
 	align-items: center;
@@ -59,6 +61,7 @@
 	background: #484a60;
 	margin: 24px 0;
 }
+
 .shop_filter {
 	margin-top: 24px;
 	height: 40px;
@@ -66,6 +69,7 @@
 	grid-template-columns: 162px 119px 1fr;
 	grid-column-gap: 8px;
 }
+
 .shop_filter_find_input,
 .shop_filter_cost_input {
 	background: #262834;
@@ -73,6 +77,7 @@
 	padding-left: 16px;
 	height: 100%;
 }
+
 .shop_filter_cost_input::placeholder,
 .shop_filter_find_input::placeholder {
 	color: #575c74;
@@ -86,19 +91,25 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	height: 596px;
+	padding-right: 16px;
+	width: calc(100% + 16px);
 }
+
 .shop_left_inventory::-webkit-scrollbar {
 	width: 3px;
 	height: 150px;
 }
+
 .shop_left_inventory::-webkit-scrollbar-thumb {
 	background: #3a3d4a;
 	border-radius: 10px;
 }
+
 .shop_left_inventory::-webkit-scrollbar-track {
 	background: #1a1d26;
 	background-clip: content-box;
 }
+
 .shop_left_inventory::-webkit-scrollbar-track {
 }
 
@@ -118,11 +129,13 @@
 	font-size: 13px;
 	font-weight: 700;
 }
+
 .shop_left_inventory_cost img {
 	width: 20px;
 	height: 20px;
 	margin-right: 8px;
 }
+
 .profile_inventory_state {
 	color: #575c74;
 	font-size: 13px;
@@ -131,14 +144,17 @@
 }
 
 .shop_left_inventory_image {
-	margin: 0 auto 6px;
+	width: 100%;
+	margin-bottom: 6px;
 }
+
 .shop_left_inventory_item_name {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;
 }
+
 .shop_left_inventory_item_skin {
 	text-align: center;
 	font-size: 13px;
@@ -189,23 +205,27 @@
     }
 }
 
-.shop_right_list{
+.shop_right_list {
     margin-top: 22px;
     display: grid;
-    grid-template-columns: repeat(5, 164px);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 3px;
-    // overflow-x: hidden;
     overflow-y: scroll;
     height: 842px;
+	padding-right: 16px;
+	width: calc(100% + 16px);
 }
+
 .shop_right_list::-webkit-scrollbar {
 	width: 3px;
 	height: 150px;
 }
+
 .shop_right_list::-webkit-scrollbar-thumb {
 	background: #3a3d4a;
 	border-radius: 10px;
 }
+
 .shop_right_list::-webkit-scrollbar-track {
 	background: #1a1d26;
 	background-clip: content-box;

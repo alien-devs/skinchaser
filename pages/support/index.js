@@ -45,7 +45,9 @@ const Support = () => {
 	]
 
 	return (
-		<MainLayout>
+		<MainLayout
+			hideChat
+		>
 			<div className="support_page">
 				<div className="support_left">
 					<img src="/img/support/support_message.svg" alt="" />

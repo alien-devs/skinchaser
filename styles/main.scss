@@ -195,3 +195,73 @@ h5 {
         margin-right: 4px;
     }
 }
+
+// MODALS
+.modal-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background: #000;
+	z-index: 20;
+	background: rgba(26, 29, 38, 0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.line {
+		width: 100%;
+		height: 1px;
+		background: #262934;
+		margin: 39px 0 42px;
+	}
+}
+
+.modal {
+	transform: scale(.95);
+	transition: all .2s ease;
+	box-shadow: 0px 8px 54px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+	position: absolute;
+	right: 26px;
+	top: 26px;
+	cursor: pointer;
+	transition: all .2s ease;
+
+	&:hover {
+		filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(172deg) brightness(106%) contrast(100%);
+	}
+}
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-enter-active {
+    opacity: 1;
+    transition: all .2s;
+
+	.modal {
+		transform: scale(1);
+	}
+}
+
+.modal-enter-done {
+    opacity: 1;
+
+	.modal {
+		transform: scale(1);
+	}
+}
+
+.modal-exit-active {
+    opacity: 0;
+    transition: all .2s;
+}
+
+.modal-exit-done {
+    opacity: 0;
+}

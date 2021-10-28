@@ -1,24 +1,3 @@
-.deposit {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	background: #000;
-	z-index: 10;
-	background: rgba(26, 29, 38, 0.6);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	.line {
-		width: 100%;
-		height: 1px;
-		background: #262934;
-		margin: 39px 0 42px;
-	}
-}
-
 .deposit_container {
 	display: flex;
 }
@@ -149,6 +128,7 @@
 	align-items: center;
 	justify-content: center;
 	padding-left: 50%;
+	padding-right: 24px;
 	font-weight: 600;
 	background: url("/img/general/coin.svg") no-repeat 45% center;
 	margin-bottom: 16px;
