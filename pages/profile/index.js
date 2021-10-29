@@ -104,11 +104,17 @@ const Profile = () => {
 					</div>
 					<div className="profile_referal">
 						<h2 className="referal_title">РЕФЕРАЛЬНАЯ СИСТЕМА</h2>
-						<img
-							src="/img/profile/referal.png"
-							alt=""
-							style={{ marginBottom: "35px" }}
-						/>
+						<div className="level_progress">
+							<img src="/img/profile/referal.png" alt="" />
+							<div className="block">
+								<h2>1 LvL</h2>
+								<div className="line">
+
+								</div>
+								<p>4 реф.</p>
+							</div>
+						</div>
+
 						<div className="earned">
 							<h2>Заработано</h2>
 							<p>$500</p>
@@ -123,7 +129,11 @@ const Profile = () => {
 								</p>
 							</div>
 							<div className="graph">
-								<img src="/img/profile/medal.svg" alt="" className="graph_img"/>
+								<img
+									src="/img/profile/medal.svg"
+									alt=""
+									className="graph_img"
+								/>
 								<div className="line big"></div>
 								<div className="vertical_line default"></div>
 								<div className="line"></div>
@@ -134,14 +144,18 @@ const Profile = () => {
 						</div>
 						<div className="referal_footer">
 							<div className="referal_footer_block">
-								<h2 className="referal_footer_title">Ваш код:</h2>
+								<h2 className="referal_footer_title">
+									Ваш код:
+								</h2>
 								<div className="referal_footer_cont">
 									<h2 className="margin">free50</h2>
 									<img src="/img/profile/mark.svg" alt="" />
 								</div>
 							</div>
 							<div className="referal_footer_block">
-								<h2 className="referal_footer_title">Ваша ссылка:</h2>
+								<h2 className="referal_footer_title">
+									Ваша ссылка:
+								</h2>
 								<div className="referal_footer_cont">
 									<h2>https://skinbox.n...</h2>
 									<img src="/img/profile/coppy.svg" alt="" />
