@@ -6,6 +6,7 @@ import Deposit from "./modals/Deposit";
 import Modal from "./modals/Modal";
 import Settings from "./modals/Settings";
 import Notification from "./modals/Notification";
+import Shop from "./modals/Shop";
 
 const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 	const [depositState, setDepositState] = useState(false);
@@ -24,6 +25,9 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 			</Modal>
 			<Modal state={settingsState} setState={setSettingsState}>
 				<Settings close={() => setSettingsState(false)} />
+			</Modal>
+			<Modal state={true}>
+				<Shop />
 			</Modal>
 
 			{/* <Notification /> */}
