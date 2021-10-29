@@ -53,7 +53,7 @@ const Support = () => {
 		} else if (status == "waiting") {
 			return "Ожидает ответа";
 		} else {
-			return "Вопрос решен"
+			return "Вопрос решен";
 		}
 	};
 
@@ -75,7 +75,7 @@ const Support = () => {
 						ЗАДАТЬ ВОПРОС / ВАШИ ПРЕДЛОЖЕНИЯ
 					</button>
 				</div>
-				<div className="support_right">
+				<div className="support_middle">
 					{supportItems.map((item, key) => (
 						<div>
 							<div className={`support_card ${item.status}`}>
@@ -101,6 +101,24 @@ const Support = () => {
 							<div className="support_line"></div>
 						</div>
 					))}
+				</div>
+				<div className="support_right">
+					<div className="support_message">
+						<img src="/img/support/chat_logo.png" alt="" />
+					</div>
+					<div className="support_message">
+						<img src="/img/support/chat_logo.png" alt="" />
+						<div className="message_right">
+							<div className="message_row">
+								<h2 className="admin">Administrator</h2>
+								<p className="time">23:08</p>
+							</div>
+							<p className="text">
+								Здравствуйте! Мы в процессе решения ваше
+								проблемы.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</MainLayout>

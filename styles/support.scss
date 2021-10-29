@@ -1,6 +1,6 @@
 .support_page {
 	display: grid;
-	grid-template-columns: 398px auto;
+	grid-template-columns: 398px auto 1fr;
 	grid-column-gap: 24px;
 }
 
@@ -14,6 +14,7 @@
 	align-items: center;
 	text-align: center;
 }
+
 .support_left img {
 	margin-bottom: 8px;
 }
@@ -75,7 +76,7 @@
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 }
-.support_right {
+.support_middle {
 	padding-bottom: 121px;
 	border-radius: 5px;
 	background: #1a1d26;
@@ -135,4 +136,58 @@
 .support_card_column {
 	display: flex;
 	flex-direction: column;
+}
+
+.support_right {
+	background: #0e1116;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.support_message {
+	width: 350px;
+	border-bottom: 1px solid #31343c;
+	padding-bottom: 16px;
+	display: grid;
+	grid-template-columns: 58px 1fr;
+	grid-column-gap: 4px;
+
+	&:nth-child(odd) {
+		margin-left: auto;
+	}
+	&:nth-child(n + 2) {
+		margin-top: 32px;
+	}
+
+	& .text {
+		line-height: 16px;
+		font-weight: 600;
+		font-size: 13px;
+		color: #BAC0D1;
+	}
+}
+.message_right {
+	width: 100%;
+	margin-top: 8px;
+
+	
+}
+.message_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 7px;
+	& .admin {
+		color: #FF782C;
+		font-weight: 600;
+		font-size: 14px;
+	}
+	& .time {
+		color: #BAC0D1;
+		font-size: 13px;
+		font-weight: 600;
+	}
 }
