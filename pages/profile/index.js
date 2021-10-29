@@ -1,5 +1,5 @@
-import MainLayout from "../../components/MainLayout"
-import Item from "../../components/Item"
+import MainLayout from "../../components/MainLayout";
+import Item from "../../components/Item";
 
 const Profile = () => {
 	const itemsArray = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -78,7 +78,7 @@ const Profile = () => {
 					<div className="profile_inventory">
 						<div className="profile_inventory_list">
 							{itemsArray.map((key) => (
-								<Item key={key}/>
+								<Item key={key} />
 							))}
 						</div>
 					</div>
@@ -114,6 +114,40 @@ const Profile = () => {
 							<p>$500</p>
 						</div>
 						<button>Забрать</button>
+						<div className="level">
+							<div className="row">
+								<h2>до 2 уровня</h2>
+								<p>
+									<img src="/img/general/coin.svg" />
+									987 <span>/</span> 1500
+								</p>
+							</div>
+							<div className="graph">
+								<img src="/img/profile/medal.svg" alt="" className="graph_img"/>
+								<div className="line big"></div>
+								<div className="vertical_line default"></div>
+								<div className="line"></div>
+								<div className="vertical_line green"></div>
+								<div className="line"></div>
+								<div className="vertical_line second_green"></div>
+							</div>
+						</div>
+						<div className="referal_footer">
+							<div className="referal_footer_block">
+								<h2 className="referal_footer_title">Ваш код:</h2>
+								<div className="referal_footer_cont">
+									<h2 className="margin">free50</h2>
+									<img src="/img/profile/mark.svg" alt="" />
+								</div>
+							</div>
+							<div className="referal_footer_block">
+								<h2 className="referal_footer_title">Ваша ссылка:</h2>
+								<div className="referal_footer_cont">
+									<h2>https://skinbox.n...</h2>
+									<img src="/img/profile/coppy.svg" alt="" />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
