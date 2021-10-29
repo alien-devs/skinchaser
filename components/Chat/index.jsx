@@ -1,3 +1,4 @@
+import Input from '../Input'
 import s from './chat.module.scss'
 import ChatAlert from './ChatAlert'
 import Message from './Message'
@@ -33,14 +34,7 @@ const Chat = () => {
                         <ChatAlert />
                         <Message />
                     </div>
-                    <div className={s.sendWrapper}>
-                        <div className={s.send}>
-                            <input type="text" placeholder="Введите сообщение"/>
-                            <button>
-                                <img src="/img/chat/send.svg" alt="" />
-                            </button>
-                        </div>
-                    </div>
+                    <Input classes={s.sendWrapper}/>
                 </div>
             </div>
         </div>
