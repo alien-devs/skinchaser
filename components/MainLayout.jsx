@@ -26,9 +26,9 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 			<Modal state={settingsState} setState={setSettingsState}>
 				<Settings close={() => setSettingsState(false)} />
 			</Modal>
-			<Modal state={true}>
+			{/* <Modal state={true}>
 				<Shop />
-			</Modal>
+			</Modal> */}
 
 			{/* <Notification /> */}
 
