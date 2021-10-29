@@ -28,7 +28,7 @@ const Statistics = () => {
             </div>
             <div className="statistics_metric">
                 <h2>
-                    <img src="/img/wheel/items.png" alt="" />
+                    <img src="/img/wheel/items.svg" alt="" />
                     предметов:
                 </h2>
                 <p>52</p>

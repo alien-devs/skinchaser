@@ -26,7 +26,7 @@ const Settings = (props) => {
 				<div className="language">
 					<img src="/img/general/flags/uk.png" alt="" />
 					<img
-						src="/img/settings/arrow.svg"
+						src="/img/general/arrow.svg"
 						alt=""
 						className="language_arrow"
 					/>

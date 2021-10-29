@@ -1,5 +1,6 @@
 import MainLayout from "../../components/MainLayout";
 import Item from "../../components/Item";
+import Dropdown from "../../components/Dropdown";
 
 const Profile = () => {
 	const itemsArray = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -76,6 +77,23 @@ const Profile = () => {
 						</div>
 					</div>
 					<div className="profile_inventory">
+						<Dropdown
+							large
+							list={[
+								{
+									name: "Crash",
+									img: "crash.svg"
+								},
+								{
+									name: "Jackpot",
+									img: "jackpot.svg"
+								},
+								{
+									name: "Wheel",
+									img: "wheel.svg"
+								}
+							]}
+						/>
 						<div className="profile_inventory_list">
 							{itemsArray.map((key) => (
 								<Item key={key} />

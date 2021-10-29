@@ -1,9 +1,10 @@
-import React from "react"
+import { useState } from "react"
 import s from "./header.module.scss"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
 const Header = (props) => {
+	const [sound, setSound] = useState(true)
 	const router = useRouter()
 
 	return (
@@ -18,8 +19,12 @@ const Header = (props) => {
 					</div>
 				</Link>
 				<div className={s.switchers}>
-					<button id={s.sound} className="secondary-btn">
-						<img src="/img/header/sound.svg" alt="" />
+					<button
+						id={s.sound}
+						className="secondary-btn"
+						onClick={() => setSound(!sound)}
+					>
+						<img src={`/img/header/sound${sound ? "" : "-off"}.svg`} alt="" />
 					</button>
 					<button id={s.lang} className="secondary-btn">
 						<img
@@ -27,7 +32,7 @@ const Header = (props) => {
 							alt=""
 							className={s.country}
 						/>
-						<img src="/img/header/arrow.svg" alt="" />
+						<img src="/img/general/arrow.svg" alt="" />
 					</button>
 				</div>
 			</div>
@@ -55,7 +60,7 @@ const Header = (props) => {
 				</div>
 				<div className={s.profile}>
 					<div className={s.ava}>
-						<img src="" alt="" />
+						<img src="/img/general/ava.png" alt="" />
 					</div>
 					<div className={s.player}>
 						<Link href="/profile">

@@ -6,7 +6,22 @@ import Message from './Message'
 const Chat = () => {
     return (
         <div className={`${s.chat} chat`}>
-            <div className={s.giveaway}></div>
+            <div className={s.giveaway}>
+                <span className={s.effect}></span>
+                <div>
+                    <div className={s.giveawaySkin}>
+                        <img src="/img/general/m4.png" alt="" />
+                        <img src="/img/general/blue-skin.png" alt="" className={s.skin}/>
+                    </div>
+                    <div>
+                        <h5>Бесплатный скин</h5>
+                        <span className={s.timer}>
+                            00:58:41
+                        </span>
+                    </div>
+                </div>
+                <img src="/img/chat/tick.png" alt="" />
+            </div>
             <div className={s.content}>
                 <div className={s.header}>
                     <div className={s.leftHeader}>

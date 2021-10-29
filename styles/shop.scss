@@ -50,7 +50,8 @@
 	font-size: 16px;
 	color: #c3b321;
 	font-weight: bold;
-	& img {
+
+	img {
 		margin-right: 8px;
 	}
 }
@@ -74,7 +75,7 @@
 .shop_filter_cost_input {
 	background: #262834;
 	border-radius: 5px;
-	padding-left: 16px;
+	padding: 0 16px;
 	height: 100%;
 }
 
@@ -110,69 +111,12 @@
 	background-clip: content-box;
 }
 
-.shop_left_inventory::-webkit-scrollbar-track {
-}
-
-.shop_left_inventory_card {
-	display: flex;
-	flex-direction: column;
-	background: #1e222c;
-	border: 1px solid #2d3242;
-	border-radius: 5px;
-	padding: 16px 16px 10px 16px;
-}
-
-.shop_left_inventory_cost {
-	display: flex;
-	align-items: center;
-	color: #c3b321;
-	font-size: 13px;
-	font-weight: 700;
-}
-
-.shop_left_inventory_cost img {
-	width: 20px;
-	height: 20px;
-	margin-right: 8px;
-}
-
-.profile_inventory_state {
-	color: #575c74;
-	font-size: 13px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.shop_left_inventory_image {
-	width: 100%;
-	margin-bottom: 6px;
-}
-
-.shop_left_inventory_item_name {
-	text-transform: uppercase;
-	font-size: 13px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.shop_left_inventory_item_skin {
-	text-align: center;
-	font-size: 13px;
-	color: #75777a;
-	margin-top: 2px;
-}
-
-.shop_left_inventory_card_row {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .shop_right {
 	background: #1a1d26;
 	border-radius: 5px;
 	padding: 24px 24px 0 24px;
 }
+
 .shop_right_row {
 	display: flex;
 	align-items: center;
@@ -184,8 +128,9 @@
 	height: 100%;
 	background: #262834;
 	border-radius: 5px;
-    padding-left: 16px;
+    padding: 0 16px;
     width: 100%;
+
     &::placeholder {
         font-size: 13px;
         color: #575C74;
@@ -200,7 +145,8 @@
     display: flex;
     align-items: center;
     margin-left: 28px;
-    & img {
+	
+    img {
         margin-left: 6px;
     }
 }

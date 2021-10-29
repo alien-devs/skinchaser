@@ -1,10 +1,9 @@
 import Inventory from "../../components/Inventory";
 import MainLayout from "../../components/MainLayout";
 import Statistics from "../../components/Statistics";
+import { ar } from "../../data/arrays";
 
 const Wheel = () => {
-	const wheelBetArray = [1, 1, 1, 1, 1, 1];
-
 	return (
 		<MainLayout>
 			<div className="wheel-page">
@@ -53,7 +52,7 @@ const Wheel = () => {
 								</p>
 							</div>
 							<div className="wheel_bet_main">
-								{wheelBetArray.map((key) => (
+								{ar.map((key) => (
 									<div className="wheel_bet_row" key={key}>
 										<div className="wheel_bet_row_left">
 											<img
@@ -94,7 +93,7 @@ const Wheel = () => {
 								</p>
 							</div>
 							<div className="wheel_bet_main">
-								{wheelBetArray.map((key) => (
+								{ar.map((key) => (
 									<div className="wheel_bet_row" key={key}>
 										<div className="wheel_bet_row_left">
 											<img
@@ -135,7 +134,7 @@ const Wheel = () => {
 								</p>
 							</div>
 							<div className="wheel_bet_main">
-								{wheelBetArray.map((key) => (
+								{ar.map((key) => (
 									<div className="wheel_bet_row" key={key}>
 										<div className="wheel_bet_row_left">
 											<img

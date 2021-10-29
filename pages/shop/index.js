@@ -1,11 +1,9 @@
 import MainLayout from "../../components/MainLayout"
+import { ar } from "../../data/arrays"
+import Item from "../../components/Item"
+import Dropdown from "../../components/Dropdown"
 
 const Shop = () => {
-	const shopArray = [
-		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-	]
-
 	return (
 		<MainLayout>
 			<div className="shop_page">
@@ -45,41 +43,21 @@ const Shop = () => {
 							placeholder="Цена"
 							className="shop_filter_cost_input"
 						/>
+						<Dropdown
+							list={["Цена", "Популярность", "Тип"]}
+						/>
 					</div>
 					<div className="shop_left_line"></div>
 					<div className="shop_left_inventory">
 						{
-							shopArray.map(key => (
-								<div className="shop_left_inventory_card" key={key}>
-									<div className="shop_left_inventory_card_row">
-										<p className="shop_left_inventory_cost">
-											<img src="/img/general/coin.svg" alt="" />
-											54.37
-										</p>
-										<p className="profile_inventory_state">
-											Fn
-										</p>
-									</div>
-									<img
-										src="/img/profile/item.png"
-										alt=""
-										className="shop_left_inventory_image"
-									/>
-									<h2 className="shop_left_inventory_item_name">
-										Tec 9
-									</h2>
-									<h2 className="shop_left_inventory_item_skin">
-										Терсаса
-									</h2>
-								</div>
-							))
+							ar.map(key => <Item />)
 						}
 					</div>
 					<button
 						className="primary-btn blue"
 						style={{width: "100%"}}
 					>
-						ПОДТВЕРДИТЬ
+						Подтвердить
 					</button>
 				</div>
 				<div className="shop_right">
@@ -90,35 +68,26 @@ const Shop = () => {
 							placeholder="Поиск"
 						/>
 						<p className="shop_right_cost">
-							Цена <img src="/img/shop/cost.png" alt="" />
+							Цена <img src="/img/shop/filter.svg" alt="" />
 						</p>
+					</div>
+					<div className="shop-filter">
+						<Dropdown
+							list={["Цена", "Тип", "Популярность"]}
+						/>
+						<Dropdown
+							list={["Тип", "Цена", "Популярность"]}
+						/>
+						<Dropdown
+							list={["Цена", "Популярность", "Тип"]}
+						/>
+						<div className="shop-range">
+
+						</div>
 					</div>
 					<div className="shop_right_list">
 						{
-							shopArray.map(key => (
-								<div className="shop_left_inventory_card" key={key}>
-									<div className="shop_left_inventory_card_row">
-										<p className="shop_left_inventory_cost">
-											<img src="/img/general/coin.svg" alt="" />
-											54.37
-										</p>
-										<p className="profile_inventory_state">
-											Fn
-										</p>
-									</div>
-									<img
-										src="/img/profile/item.png"
-										alt=""
-										className="shop_left_inventory_image"
-									/>
-									<h2 className="shop_left_inventory_item_name">
-										Tec 9
-									</h2>
-									<h2 className="shop_left_inventory_item_skin">
-										Терсаса
-									</h2>
-								</div>
-							))
+							ar.map(key => <Item />)
 						}
 					</div>
 				</div>
