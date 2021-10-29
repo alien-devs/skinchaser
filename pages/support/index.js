@@ -1,3 +1,4 @@
+import Input from "../../components/Input";
 import MainLayout from "../../components/MainLayout";
 
 const Support = () => {
@@ -128,6 +129,7 @@ const Support = () => {
 							</p>
 						</div>
 					</div>
+					<Input />
 				</div>
 			</div>
 		</MainLayout>
