@@ -1,4 +1,4 @@
-import MainLayout from "../../components/MainLayout"
+import MainLayout from "../../components/MainLayout";
 
 const Support = () => {
 	const supportItems = [
@@ -6,6 +6,19 @@ const Support = () => {
 			title: "Не могу пополнить счёт",
 			text: "Почему то выкидывает после редикта на платежку =(",
 			imgUrl: "/img/support/logo.png",
+			status: "new",
+		},
+		{
+			title: "Не могу пополнить счёт",
+			text: "Почему то выкидывает после редикта на платежку =(",
+			imgUrl: "/img/support/logo.png",
+			status: "waiting",
+		},
+		{
+			title: "Не могу пополнить счёт",
+			text: "Почему то выкидывает после редикта на платежку =(",
+			imgUrl: "/img/support/logo.png",
+			status: "closed",
 		},
 		{
 			title: "Не могу пополнить счёт",
@@ -32,22 +45,20 @@ const Support = () => {
 			text: "Почему то выкидывает после редикта на платежку =(",
 			imgUrl: "/img/support/logo.png",
 		},
-		{
-			title: "Не могу пополнить счёт",
-			text: "Почему то выкидывает после редикта на платежку =(",
-			imgUrl: "/img/support/logo.png",
-		},
-		{
-			title: "Не могу пополнить счёт",
-			text: "Почему то выкидывает после редикта на платежку =(",
-			imgUrl: "/img/support/logo.png",
-		},
-	]
+	];
+
+	const statusHandler = (status) => {
+		if (status == "new") {
+			return "Новое сообщение";
+		} else if (status == "waiting") {
+			return "Ожидает ответа";
+		} else {
+			return "Вопрос решен"
+		}
+	};
 
 	return (
-		<MainLayout
-			hideChat
-		>
+		<MainLayout hideChat>
 			<div className="support_page">
 				<div className="support_left">
 					<img src="/img/support/support_message.svg" alt="" />
@@ -57,14 +68,17 @@ const Support = () => {
 						<br /> У вас есть какие-нибудь предложения ?
 					</p>
 					{<div></div>}
-					<button className="primary-btn blue" style={{marginTop: "auto"}}>
+					<button
+						className="primary-btn blue"
+						style={{ marginTop: "auto" }}
+					>
 						ЗАДАТЬ ВОПРОС / ВАШИ ПРЕДЛОЖЕНИЯ
 					</button>
 				</div>
 				<div className="support_right">
 					{supportItems.map((item, key) => (
 						<div>
-							<div className="support_card">
+							<div className={`support_card ${item.status}`}>
 								<div className="support_card_left">
 									<img src={item.imgUrl} alt="" />
 									<div className="support_card_column">
@@ -78,18 +92,19 @@ const Support = () => {
 								</div>
 								<div className="support_card_column">
 									<h2 className="support_card_state">
-										Новое сообщение <div></div>
+										{statusHandler(item.status)}
+										<div className="state"></div>
 									</h2>
 									<h2 className="support_card_time">18:43</h2>
 								</div>
 							</div>
-                            <div className="support_line"></div>
+							<div className="support_line"></div>
 						</div>
 					))}
 				</div>
 			</div>
 		</MainLayout>
-	)
-}
+	);
+};
 
-export default Support
+export default Support;
