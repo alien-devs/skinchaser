@@ -1,3 +1,5 @@
+import Checkbox from "../../Checkbox";
+
 const Settings = (props) => {
 	return (
 		<div className="settings_container">
@@ -31,23 +33,11 @@ const Settings = (props) => {
 				</div>
 			</div>
 			<div className="settings_line"></div>
-			<div className="settings_advansed">
-				<div className="advansed">
-					<input type="checkbox" />
-					<h2>Анимации на сайте</h2>
-				</div>
-				<div className="advansed">
-					<input type="checkbox" />
-					<h2>Включить стикеры</h2>
-				</div>
-				<div className="advansed">
-					<input type="checkbox" />
-					<h2>Автовоспроизведение стикеров</h2>
-				</div>
-				<div className="advansed">
-					<input type="checkbox" />
-					<h2>Режим стримера</h2>
-				</div>
+			<div className="settings_checkboxes">
+				<Checkbox id="animationCb" title="Анимация на сайте"/>
+				<Checkbox id="stickerCb" title="Включить стикеры"/>
+				<Checkbox id="autoplayCb" title="Автовоспроизведение стикеров"/>
+				<Checkbox id="streamerCb" title="Режим стримера"/>
 			</div>
 		</div>
 	);

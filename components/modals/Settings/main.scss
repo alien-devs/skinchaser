@@ -93,18 +93,11 @@
     margin: 15px 0;
 }
 
-.settings_advansed {
+.settings_checkboxes {
     display: flex;
     flex-direction: column;
-}
 
-.advansed {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    h2 {
-        margin: 0 0 0 11px;
-        font-weight: 600;
-        font-size: 13px;
-    }
+	.checkbox:not(:last-child) {
+		margin-bottom: 10px;
+	}
 }

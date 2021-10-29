@@ -265,3 +265,48 @@ h5 {
 .modal-exit-done {
     opacity: 0;
 }
+
+.checkbox {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	input {
+		display: none;
+
+		&:checked {
+			& + div {
+				&:before {
+					right: calc(100% - 22px);
+					background: #4B4F62;
+				}
+			}
+		}
+	}
+}
+
+.checkbox-state {
+	background: #2F3241;
+	border-radius: 10px;
+	width: 50px;
+	margin-right: 11px;
+	height: 28px;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		display: block;
+		background: #F6A33E;
+		border-radius: 5px;
+		right: 6px;
+		transition: all .3s ease;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

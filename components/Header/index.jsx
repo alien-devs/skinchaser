@@ -9,12 +9,14 @@ const Header = (props) => {
 	return (
 		<header className={s.header}>
 			<div className={s.main}>
-				<div className={s.logo}>
-					<img src="/img/header/logo.png" alt="" />
-					<h6>
-						Skin<span>chaser</span>
-					</h6>
-				</div>
+				<Link href="/crash">
+					<div className={s.logo}>
+						<img src="/img/header/logo.png" alt="" />
+						<h6>
+							Skin<span>chaser</span>
+						</h6>
+					</div>
+				</Link>
 				<div className={s.switchers}>
 					<button id={s.sound} className="secondary-btn">
 						<img src="/img/header/sound.svg" alt="" />

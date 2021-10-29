@@ -91,9 +91,9 @@ const Profile = () => {
 								type="text"
 								placeholder="Введите ссылку на трейд"
 							/>
-							<span>
+							<button>
 								<img src="/img/profile/save_icon.svg" alt="" />
-							</span>
+							</button>
 						</div>
 						<button
 							className="primary-btn blue"
