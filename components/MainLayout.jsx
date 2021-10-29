@@ -5,12 +5,12 @@ import Header from "./Header";
 import Deposit from "./modals/Deposit";
 import Modal from "./modals/Modal";
 import Settings from "./modals/Settings";
-import Notification from "./Notification/";
+import Notification from "./modals/Notification";
 
 const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 	const [depositState, setDepositState] = useState(false);
 	const [settingsState, setSettingsState] = useState(false);
-	const [notificationState, setNotificationState] = useState(false);
+	// const [notificationState, setNotificationState] = useState(false);
 
 	return (
 		<>
@@ -26,12 +26,11 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 				<Settings close={() => setSettingsState(false)} />
 			</Modal>
 
-			{/* <Notification notificationState={notificationState}/> */}
+			{/* <Notification /> */}
 
 			<Header
 				openDepositModal={() => setDepositState(true)}
 				openSettingsModal={() => setSettingsState(true)}
-				openNotificationState={() => setNotificationState(true)}
 			/>
 			<div className={`content ${hideChat ? "full-width" : ""}`}>
 				<Chat />
