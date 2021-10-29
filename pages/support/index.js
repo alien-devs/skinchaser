@@ -105,13 +105,22 @@ const Support = () => {
 				<div className="support_right">
 					<div className="support_message">
 						<img src="/img/support/chat_logo.png" alt="" />
+						<div className="message_right">
+							<div className="message_row">
+								<h2 className="user">Bets by Boss</h2>
+								<p className="time">23:08</p>
+							</div>
+							<p className="text">
+								УРА! У меня началось получатся выигрывать
+							</p>
+						</div>
 					</div>
 					<div className="support_message">
 						<img src="/img/support/chat_logo.png" alt="" />
 						<div className="message_right">
 							<div className="message_row">
 								<h2 className="admin">Administrator</h2>
-								<p className="time">23:08</p>
+								<p className="time">23:07</p>
 							</div>
 							<p className="text">
 								Здравствуйте! Мы в процессе решения ваше

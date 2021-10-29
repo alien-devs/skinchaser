@@ -109,9 +109,11 @@ const Profile = () => {
 							alt=""
 							style={{ marginBottom: "35px" }}
 						/>
-						<div>
-							
+						<div className="earned">
+							<h2>Заработано</h2>
+							<p>$500</p>
 						</div>
+						<button>Забрать</button>
 					</div>
 				</div>
 			</div>

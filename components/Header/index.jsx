@@ -74,7 +74,7 @@ const Header = (props) => {
 					>
 						<img src="/img/header/settings.svg" alt="" />
 					</button>
-					<button className="secondary-btn">
+					<button className="secondary-btn" onClick={props.openNotificationState}>
 						<img src="/img/header/notifications.svg" alt="" />
 					</button>
 					<button className="secondary-btn">
