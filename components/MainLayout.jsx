@@ -11,7 +11,6 @@ import Shop from "./modals/Shop";
 const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 	const [depositState, setDepositState] = useState(false);
 	const [settingsState, setSettingsState] = useState(false);
-	// const [notificationState, setNotificationState] = useState(false);
 
 	return (
 		<>
@@ -29,8 +28,6 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 			{/* <Modal state={true}>
 				<Shop />
 			</Modal> */}
-
-			{/* <Notification /> */}
 
 			<Header
 				openDepositModal={() => setDepositState(true)}

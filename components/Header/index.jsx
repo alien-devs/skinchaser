@@ -2,6 +2,7 @@ import { useState } from "react"
 import s from "./header.module.scss"
 import Link from "next/link"
 import { useRouter } from "next/router"
+import Notification from "../modals/Notification"
 
 const Header = (props) => {
 	const [sound, setSound] = useState(true)
@@ -79,9 +80,12 @@ const Header = (props) => {
 					>
 						<img src="/img/header/settings.svg" alt="" />
 					</button>
-					<button className="secondary-btn" onClick={props.openNotificationState}>
-						<img src="/img/header/notifications.svg" alt="" />
-					</button>
+					<div className={s.notifications}>
+						<button className="secondary-btn" onClick={props.openNotificationState}>
+							<img src="/img/header/notifications.svg" alt="" />
+						</button>
+						<Notification />
+					</div>
 					<button className="secondary-btn">
 						<img src="/img/header/exit.svg" alt="" />
 					</button>

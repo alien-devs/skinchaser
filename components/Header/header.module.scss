@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 16;
 
     nav {
         padding: 0 31px;
@@ -142,7 +142,9 @@
     button {
         width: 40px;
         justify-content: center;
+    }
 
+    & > * {
         &:not(:first-child) {
             margin-left: 8px;
         }
@@ -177,4 +179,8 @@
 .balance {
     display: flex;
     align-items: center;
+}
+
+.notifications {
+    position: relative;
 }
