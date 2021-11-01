@@ -27,7 +27,7 @@ const Inventory = () => {
             <div className="inventory-list">
                 {
                     ar.map((i, key) => (
-                        <Item key={key}/>
+                        <Item key={key} active={i.active}/>
                     ))
                 }
             </div>

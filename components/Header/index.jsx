@@ -1,12 +1,17 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import s from "./header.module.scss"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import Notification from "../modals/Notification"
+import { useOnClickOutside } from "../../lib/hooks"
 
 const Header = (props) => {
 	const [sound, setSound] = useState(true)
+	const [notifications, setNotifications] = useState(false)
 	const router = useRouter()
+
+	const notificationRef = useRef()
+	useOnClickOutside(notificationRef, () => setNotifications(false))
 
 	return (
 		<header className={s.header}>
@@ -57,7 +62,10 @@ const Header = (props) => {
 						className="primary-btn"
 						onClick={props.openDepositModal}
 					>Пополнить</button>
-					<button className="primary-btn yellow">Магазин</button>
+					<button
+						className="primary-btn yellow"
+						onClick={props.openShopModal}
+					>Магазин</button>
 				</div>
 				<div className={s.profile}>
 					<div className={s.ava}>
@@ -65,7 +73,7 @@ const Header = (props) => {
 					</div>
 					<div className={s.player}>
 						<Link href="/profile">
-							<span className={s.name}>Tragedy</span>
+							<span className={s.name}>DigitalNox Design</span>
 						</Link>
 						<span className={s.balance}>
 							<img src="/img/general/coin.svg" alt="" />
@@ -80,11 +88,13 @@ const Header = (props) => {
 					>
 						<img src="/img/header/settings.svg" alt="" />
 					</button>
-					<div className={s.notifications}>
-						<button className="secondary-btn" onClick={props.openNotificationState}>
+					<div ref={notificationRef} className={s.notifications}>
+						<button className="secondary-btn" onClick={() => setNotifications(!notifications)}>
 							<img src="/img/header/notifications.svg" alt="" />
 						</button>
-						<Notification />
+						<Notification
+							state={notifications}
+						/>
 					</div>
 					<button className="secondary-btn">
 						<img src="/img/header/exit.svg" alt="" />

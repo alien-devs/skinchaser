@@ -1,16 +1,17 @@
-import { useState } from "react";
-import Head from "next/head";
-import Chat from "./Chat";
-import Header from "./Header";
-import Deposit from "./modals/Deposit";
-import Modal from "./modals/Modal";
-import Settings from "./modals/Settings";
-import Notification from "./modals/Notification";
-import Shop from "./modals/Shop";
+import { useState } from "react"
+import Head from "next/head"
+import Chat from "./Chat"
+import Header from "./Header"
+import Deposit from "./modals/Deposit"
+import Modal from "./modals/Modal"
+import Settings from "./modals/Settings"
+import Notification from "./modals/Notification"
+import Shop from "./modals/Shop"
 
-const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
-	const [depositState, setDepositState] = useState(false);
-	const [settingsState, setSettingsState] = useState(false);
+const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass }) => {
+	const [depositState, setDepositState] = useState(false)
+	const [settingsState, setSettingsState] = useState(false)
+	const [shopState, setShopState] = useState(false)
 
 	return (
 		<>
@@ -25,20 +26,23 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser" }) => {
 			<Modal state={settingsState} setState={setSettingsState}>
 				<Settings close={() => setSettingsState(false)} />
 			</Modal>
-			{/* <Modal state={true}>
-				<Shop />
-			</Modal> */}
+			<Modal state={shopState} setState={setShopState}>
+				<Shop close={() => setShopState(false)} />
+			</Modal>
 
 			<Header
 				openDepositModal={() => setDepositState(true)}
 				openSettingsModal={() => setSettingsState(true)}
+				openShopModal={() => setShopState(true)}
 			/>
 			<div className={`content ${hideChat ? "full-width" : ""}`}>
 				<Chat />
-				<main>{children}</main>
+				<main className={mainClass}>
+					{children}
+				</main>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default MainLayout;
+export default MainLayout

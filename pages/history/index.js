@@ -1,20 +1,18 @@
 import MainLayout from "../../components/MainLayout"
+import { ar } from "../../data/arrays"
 
 const History = () => {
-	const historyArray = [
-		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-	]
-
 	return (
-		<MainLayout>
+		<MainLayout
+			mainClass="main-gradient"
+		>
 			<div className="history_page">
 				<h1 className="history_page_cache_title">
 					Хэш
 					144ed5a8419efdd4fcbde1f66712fb4b0fe5d8ea67d126cdad41e9e99cb7f98f
 				</h1>
 				<div className="history_page_list">
-					
-					{historyArray.map((counter, key) => {
+					{ar.map(i => {
 						return (
 							<div className="history_page_card">
 								<div className="history_page_card_top">

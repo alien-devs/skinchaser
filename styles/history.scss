@@ -68,7 +68,8 @@
     background: #212530;
     font-weight: 600;
     color: #ADB2BD; 
-    & img {
+
+    img {
         margin-right: 4px;
     }
 }
@@ -78,7 +79,8 @@
     background: #212530;
     padding: 12px 0;
     @include history_page_card;
-    & img {
+
+    img {
         margin-right: 4px;
     }
 }
@@ -99,4 +101,20 @@
 .history_page_card_order {
     font-size: 13px;
     color: #5E626B;
+}
+
+.main-gradient {
+    &:before {
+        content: "";
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: 113px;
+        display: block;
+        z-index: 1;
+        pointer-events: none;
+        background: linear-gradient(360deg, rgba(18, 21, 28, 0.6) 35.43%, rgba(18, 21, 28, 0) 76.52%);
+    }
 }

@@ -1,13 +1,17 @@
-import { ar } from "../../../data/arrays";
-import Item from "../../Item";
+import { ar } from "../../../data/arrays"
+import Item from "../../Item"
+import Dropdown from "../../Dropdown"
 
-const Shop = () => {
+const Shop = (props) => {
 	return (
 		<div className="modal shop_modal">
-			<div className="row">
-				<h2 className="shop_modal_title">Магазин</h2>
-				<img src="/img/general/vector.svg" alt="" />
-			</div>
+			<img
+				src="/img/general/vector.svg"
+				alt=""
+				className="modal-close"
+				onClick={props.close}
+			/>
+			<h2 className="shop_modal_title">Магазин</h2>
 			<div className="shop_modal_cost_row">
 				<div className="shop_cost_block">
 					<h1 className="shop_cost_block_title">Отдаете</h1>
@@ -31,13 +35,27 @@ const Shop = () => {
 					</p>
 				</div>
 			</div>
-			<div className="shop_modal_list">
-				{ar.map((item) => (
-					<Item />
-                ))}
+			<div className="shop_filter">
+				<input
+					type="text"
+					placeholder="Поиск"
+					className="shop_filter_find_input"
+				/>
+				<input
+					type="text"
+					placeholder="Цена"
+					className="shop_filter_cost_input"
+				/>
+				<Dropdown
+					list={["Цена", "Популярность", "Тип"]}
+				/>
 			</div>
+			<div className="shop_modal_list">
+				{ar.map(() => <Item />)}
+			</div>
+			<button className="primary-btn blue">Подтвердить</button>
 		</div>
-	);
-};
+	)
+}
 
-export default Shop;
+export default Shop

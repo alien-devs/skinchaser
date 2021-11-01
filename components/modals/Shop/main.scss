@@ -4,13 +4,20 @@
 	border-radius: 5px;
     padding: 24px;
     width: 568px;
-	.row {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-    svg {
+    position: absolute;
+    left: 446px;
+    bottom: 24px;
 
+    .primary-btn {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .shop_filter {
+        box-sizing: content-box;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #484A60;
     }
 }
 
@@ -20,6 +27,7 @@
     color: #fff;
     margin-bottom: 16px;
 }
+
 .shop_modal_cost_row {
     border: 1px dashed #484a60;
 	padding: 8px;
@@ -36,4 +44,6 @@
     grid-gap: 14px;
     overflow-y: scroll;
     height: 420px;
+    width: calc(100% + 16px);
+    padding-right: 16px;
 }

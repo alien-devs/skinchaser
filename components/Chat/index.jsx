@@ -21,6 +21,7 @@ const Chat = () => {
                     </div>
                 </div>
                 <img src="/img/chat/tick.png" alt="" />
+                <span className={s.border}></span>
             </div>
             <div className={s.content}>
                 <div className={s.header}>

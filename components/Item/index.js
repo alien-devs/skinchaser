@@ -1,7 +1,7 @@
-const Item = () => {
+const Item = (props) => {
     return (
         <div
-            className="item_card"
+            className={`item_card ${props.active ? "active" : ""}`}
         >
             <div className="item_card_row">
                 <p className="item_cost">

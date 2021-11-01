@@ -1,10 +1,9 @@
 import MainLayout from "../../components/MainLayout";
 import Item from "../../components/Item";
 import Dropdown from "../../components/Dropdown";
+import { ar } from "../../data/arrays"
 
 const Profile = () => {
-	const itemsArray = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-
 	return (
 		<MainLayout>
 			<div className="profile_page">
@@ -95,15 +94,19 @@ const Profile = () => {
 							]}
 						/>
 						<div className="profile_inventory_list">
-							{itemsArray.map((key) => (
-								<Item key={key} />
-							))}
+							{
+								ar.map((key) => (
+									<Item key={key} />
+								))
+							}
 						</div>
 					</div>
 				</div>
 				<div className="profile_right">
 					<div className="profile_withdraw">
-						<div className="profile_withdraw_logo"></div>
+						<div className="profile_large-ava">
+							<img src="/img/general/ava.png" />
+						</div>
 						<div className="profile_withdraw_row">
 							<input
 								type="text"
