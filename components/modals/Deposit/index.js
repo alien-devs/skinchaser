@@ -4,7 +4,7 @@ const Deposit = (props) => {
 	return (
 		<div className="deposit_container modal">
 			<img
-				src="/img/settings/vector.svg"
+				src="/img/general/vector.svg"
 				alt=""
 				className="modal-close"
 				onClick={props.close}

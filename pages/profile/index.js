@@ -105,7 +105,9 @@ const Profile = () => {
 				<div className="profile_right">
 					<div className="profile_withdraw">
 						<div className="profile_large-ava">
+							<span className="profile-lvl">1 LvL</span>
 							<img src="/img/general/ava.png" />
+							<img src="/img/profile/ava-stroke.png" className="stroke"/>
 						</div>
 						<div className="profile_withdraw_row">
 							<input

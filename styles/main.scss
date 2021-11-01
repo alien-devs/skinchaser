@@ -60,13 +60,15 @@ a {
 
 	&.yellow {
 		background: #8a793b;
+		
 		&:hover {
-			background: #8a793b;
+			background: #B8B335;;
 		}
 	}
 
 	&.blue {
 		background: #204ffe;
+
 		&:hover {
 			background: #4d72ff;
 		}
@@ -348,4 +350,42 @@ h5 {
         background: #3A3D4A;
         border-radius: 10px;
     }
+}
+
+.ava {
+    position: relative;
+
+    path {
+        width: 58px;
+    }
+}
+
+.playerStatus {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #17DA3C;
+    border: 2px solid #181B23;
+}
+
+.auth-btn {
+	width: 305px;
+	background: #8D7653;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: 41px;
+
+	img {
+		width: 24px;
+		margin-right: 8px;
+	}
+
+	&:hover {
+		background: #8D7653;
+	}
 }

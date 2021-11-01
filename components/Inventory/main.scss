@@ -75,3 +75,32 @@
     grid-gap: 22px;
     padding-top: 25px;
 }
+
+.empty-inventory {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 22px;
+
+    span {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #C5CDD6;
+        margin-bottom: 33px;
+        text-align: center;
+        width: 190px;
+    }
+
+    button {
+        width: 100%;
+        background: #8D7653;
+
+        &:hover {
+            background: #8D7653;
+        }
+    }
+}

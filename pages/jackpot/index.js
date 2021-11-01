@@ -87,7 +87,7 @@ const Jackpot = () => {
                                     <div className="jackpot__bet-heading">
                                         <div>
                                             <div className="ava">
-
+                                                <img src="/img/general/ava.png"/>
                                             </div>
                                             <h2 className="user-name">
                                                 DigitalNox Design

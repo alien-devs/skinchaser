@@ -2,6 +2,19 @@ import Item from "../Item"
 import { ar } from "../../data/arrays"
 
 const Inventory = () => {
+    // if(true) {
+    //     return (
+    //         <div className="inventory">
+    //             <div className="empty-inventory">
+    //                 <span>Авторизуйтесь на сайте чтобы использовать</span>
+    //                 <button className="primary-btn">
+    //                     Авторизация
+    //                 </button>
+    //             </div>
+    //         </div>
+    //     )
+    // }
+
     return (
         <div className="inventory">
             <div className="inventory-heading">

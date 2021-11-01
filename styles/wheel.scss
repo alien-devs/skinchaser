@@ -90,6 +90,109 @@
 	border-radius: 5px;
 	height: 100%;
 	background: url("/img/wheel/main.png") no-repeat center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wheel-main__content {
+	background: url("/img/wheel/drum-bg.png") no-repeat 43% 25%;
+
+	& > div, {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
+
+.wheel-last {
+	display: block;
+	height: 27px;
+	width: 178px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: hidden;
+
+	span {
+		width: 3px;
+		display: block;
+
+		&:not(:last-child) {
+			margin-right: 4px;
+		}
+	}
+
+	.red {
+		height: 10px;
+		background: #EB5050;
+	}
+
+	.blue {
+		height: 20px;
+		background: #507CEB;
+	}
+
+	.purple {
+		height: 14px;
+		background: #923DFF;
+	}
+
+	.green {
+		height: 27px;
+		background: #00FFAA;
+	}
+}
+
+.wheel-winner {
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #858695;
+}
+
+.wheel-cur-ratio {
+	margin: 8px 0;
+	width: 48px;
+	height: 48px;
+	background: #0530C6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.wheel-random {
+	position: absolute;
+	top: 23px;
+	right: 23px;
+	width: 162px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	color: #29444F;
+}
+
+.wheel-hash {
+	position: absolute;
+	bottom: 11px;
+	right: 11px;
+	background: rgba(0, 0, 0, .34);
+	font-weight: 600;
+	font-size: 11px;
+	color: rgba(255, 255, 255, .4);
+	border-radius: 5px;
+	padding: 8px 15px;
 }
 
 .wheel_bets {

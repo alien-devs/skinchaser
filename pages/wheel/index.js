@@ -41,7 +41,33 @@ const Wheel = () => {
 				</div>
 				<div className="wheel_right">
 					<Statistics />
-					<div className="wheel_main"></div>
+					<div className="wheel_main">
+						<span className="wheel-random">Победитель определяется через сервис random.org</span>
+						<span className="wheel-hash">Хэш 144ed5a8419efdd4fcbde1f66712fb4b0fe5d8ea67d126cdad41e9e99cb7f98f</span>
+
+						<div className="wheel-main__content">
+							<img src="/img/wheel/drum.png" alt="" />
+							<div>
+								<span className="wheel-winner">Победитель</span>
+								<span className="wheel-cur-ratio">3Х</span>
+								<div className="wheel-last">
+									<span className="red"></span>
+									<span className="blue"></span>
+									<span className="purple"></span>
+									<span className="red"></span>
+									<span className="blue"></span>
+									<span className="purple"></span>
+									<span className="red"></span>
+									<span className="blue"></span>
+									<span className="purple"></span>
+									<span className="red"></span>
+									<span className="blue"></span>
+									<span className="green"></span>
+									<span className="purple"></span>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div className="wheel_bets">
 						<div className="wheel_bet">
 							<div className="wheel_bet_heading">

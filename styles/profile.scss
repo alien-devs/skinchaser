@@ -65,12 +65,17 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-gap: 14px;
 	margin-top: 23px;
+	overflow-y: scroll;
+	height: 640px;
+	width: calc(100% + 12px);
+	padding-right: 12px;
 }
 
 .profile_withdraw {
 	background: #1a1d26;
 	padding: 32px 35px;
 	border-radius: 5px;
+	padding-top: 42px;
 }
 
 .profile_right {
@@ -84,11 +89,34 @@
 }
 
 .profile_large-ava {
-	margin-bottom: 32px;
+	margin-bottom: 42px;
+	position: relative;
 	
 	img {
 		width: 125px;
 	}
+
+	.stroke {
+		position: absolute;
+		top: 49%;
+		height: 152px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.profile-lvl {
+	position: absolute;
+	top: 12px;
+	right: 21px;
+	z-index: 1;
+	background: #E3D01E;
+	border: 2px solid #1A1D26;
+	border-radius: 5px;
+	padding: 5px 8px;
+	font-weight: 600;
+	font-size: 13px;
+	color: #564E03;
 }
 
 .profile_withdraw_row {
@@ -98,7 +126,7 @@
 	margin-bottom: 16px;
 
 	input {
-		padding-left: 16px;
+		padding: 0 16px;
 		width: 230px;
 		height: 100%;
 		border: 1px solid #2e3340;
@@ -165,12 +193,19 @@
 
 	img {
 		position: absolute;
+		width: 100%;
+		pointer-events: none;
 	}
 
 	.block {
-		margin-top: 20px;
+		margin-top: 30px;
 		text-align: center;
-		padding: 14px;
+		width: 81px;
+		height: 81px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		border: 1px dashed #2f3241;
 		border-radius: 50%;
 	}
@@ -188,7 +223,7 @@
 
 	.line {
 		margin: 8px 0;
-		width: 100%;
+		width: 70%;
 		height: 1px;
 		background: #2f3241;
 	}
@@ -223,7 +258,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 27px;
+		margin-bottom: 30px;
 
 		p {
 			display: flex;

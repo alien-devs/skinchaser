@@ -60,6 +60,12 @@
         display: flex;
         align-items: center;
     }
+
+    .ava {
+        img {
+            width: 62px;
+        }
+    }
 }
 
 .jackpot-bet__chance {

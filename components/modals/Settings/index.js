@@ -4,7 +4,7 @@ const Settings = (props) => {
 	return (
 		<div className="settings_container">
 			<img
-				src="/img/settings/vector.svg"
+				src="/img/general/vector.svg"
 				alt=""
 				className="modal-close"
 				onClick={props.close}

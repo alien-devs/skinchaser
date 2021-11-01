@@ -101,6 +101,10 @@ const Header = (props) => {
 					</button>
 				</div>
 			</div>
+			{/* <button className="auth-btn primary-btn">
+				<img src="/img/general/steam.svg" />
+				Авторизация
+			</button> */}
 		</header>
 	)
 }

@@ -1,3 +1,4 @@
+import Ava from "../../components/Ava";
 import Input from "../../components/Input";
 import MainLayout from "../../components/MainLayout";
 
@@ -105,7 +106,7 @@ const Support = () => {
 				</div>
 				<div className="support_right">
 					<div className="support_message">
-						<img src="/img/support/chat_logo.png" alt="" />
+						<Ava />
 						<div className="message_right">
 							<div className="message_row">
 								<h2 className="user">Bets by Boss</h2>
@@ -117,7 +118,7 @@ const Support = () => {
 						</div>
 					</div>
 					<div className="support_message">
-						<img src="/img/support/chat_logo.png" alt="" />
+						<Ava />
 						<div className="message_right">
 							<div className="message_row">
 								<h2 className="admin">Administrator</h2>

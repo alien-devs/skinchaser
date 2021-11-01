@@ -1,12 +1,11 @@
+import Ava from '../Ava'
 import s from './chat.module.scss'
 
 const Message = () => {
     return (
         <div className={s.message}>
             <div>
-                <div className={s.ava}>
-                    <img src="" alt="" />
-                </div>
+                <Ava />
                 <div className={s.sender}>
                     <div className="center" style={{justifyContent: "space-between"}}>
                         <span className={s.name}>White CroW</span>
