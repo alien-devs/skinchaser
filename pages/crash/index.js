@@ -7,6 +7,48 @@ const Crash = () => {
 		<MainLayout>
 			<div className="crash-page">
 				<div className="crash_left">
+					<div className="crash_bet">
+						<div className="topSide">
+							<div className="gallery">
+								<img src="/img/crash/left_bet3.png" alt="" style={{right: "14px"}}/>
+								<img src="/img/crash/left_bet1.png" alt="" />
+								<img src="/img/crash/left_bet2.png" alt="" style={{left: '14px'}}/>
+							</div>
+							<h2>Draining Wight</h2>
+						</div>
+						<div className="line"></div>
+						<div className="bottomSide">
+							<div className="arrow">
+								<svg
+									width="9"
+									height="14"
+									viewBox="0 0 9 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M6.77733 0.527405L0.305664 6.99999L6.77733 13.4726L8.7225 11.5274L4.19416 6.99999L8.7225 2.47257L6.77733 0.527405Z"
+										fill="#8A8C8D"
+									/>
+								</svg>
+							</div>
+							<div className="counter">8/20</div>
+							<div className="arrow">
+								<svg
+									width="9"
+									height="14"
+									viewBox="0 0 9 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2.22267 0.527405L8.69434 6.99999L2.22267 13.4726L0.277502 11.5274L4.80584 6.99999L0.277502 2.47257L2.22267 0.527405Z"
+										fill="white"
+									/>
+								</svg>
+							</div>
+						</div>
+					</div>
 					<Inventory />
 				</div>
 				<div className="crash_right">

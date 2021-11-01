@@ -1,7 +1,8 @@
-import MainLayout from "../../components/MainLayout"
-import { ar } from "../../data/arrays"
-import Item from "../../components/Item"
-import Dropdown from "../../components/Dropdown"
+import MainLayout from "../../components/MainLayout";
+import { ar } from "../../data/arrays";
+import Item from "../../components/Item";
+import Dropdown from "../../components/Dropdown";
+import Slider, { Range } from 'rc-slider';
 
 const Shop = () => {
 	return (
@@ -43,19 +44,17 @@ const Shop = () => {
 							placeholder="Цена"
 							className="shop_filter_cost_input"
 						/>
-						<Dropdown
-							list={["Цена", "Популярность", "Тип"]}
-						/>
+						<Dropdown list={["Цена", "Популярность", "Тип"]} />
 					</div>
 					<div className="shop_left_line"></div>
 					<div className="shop_left_inventory">
-						{
-							ar.map(key => <Item />)
-						}
+						{ar.map((key) => (
+							<Item />
+						))}
 					</div>
 					<button
 						className="primary-btn blue"
-						style={{width: "100%"}}
+						style={{ width: "100%" }}
 					>
 						Подтвердить
 					</button>
@@ -72,28 +71,23 @@ const Shop = () => {
 						</p>
 					</div>
 					<div className="shop-filter">
-						<Dropdown
-							list={["Цена", "Тип", "Популярность"]}
-						/>
-						<Dropdown
-							list={["Тип", "Цена", "Популярность"]}
-						/>
-						<Dropdown
-							list={["Цена", "Популярность", "Тип"]}
-						/>
+						<Dropdown list={["Цена", "Тип", "Популярность"]} />
+						<Dropdown list={["Тип", "Цена", "Популярность"]} />
+						<Dropdown list={["Цена", "Популярность", "Тип"]} />
 						<div className="shop-range">
-
+							<Slider />
+							<Range />
 						</div>
 					</div>
 					<div className="shop_right_list">
-						{
-							ar.map(key => <Item />)
-						}
+						{ar.map((key) => (
+							<Item />
+						))}
 					</div>
 				</div>
 			</div>
 		</MainLayout>
-	)
-}
+	);
+};
 
-export default Shop
+export default Shop;
