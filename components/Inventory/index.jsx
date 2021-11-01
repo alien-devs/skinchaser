@@ -1,8 +1,7 @@
 import Item from "../Item"
+import { ar } from "../../data/arrays"
 
 const Inventory = () => {
-    const itemsArray = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-
     return (
         <div className="inventory">
             <div className="inventory-heading">
@@ -20,12 +19,14 @@ const Inventory = () => {
                     </button>
                     <div className="inventory-choose-all">
                         Выбрать всё
+                        <input type="checkbox" id="chooseAll"/>
+                        <label for="chooseAll"></label>
                     </div>
                 </div>
             </div>
             <div className="inventory-list">
                 {
-                    itemsArray.map((i, key) => (
+                    ar.map((i, key) => (
                         <Item key={key}/>
                     ))
                 }
