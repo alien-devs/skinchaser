@@ -1,7 +1,8 @@
 .support_page {
 	display: grid;
-	grid-template-columns: 398px auto 1fr;
+	grid-template-columns: 398px 1.5fr 1fr;
 	grid-column-gap: 24px;
+	height: 100%;
 }
 
 .support_left {
@@ -18,11 +19,13 @@
 .support_left img {
 	margin-bottom: 8px;
 }
+
 .support_left_title {
 	font-size: 15px;
 	font-weight: 600;
 	margin-bottom: 8px;
 }
+
 .support_left_text {
 	font-size: 13px;
 	color: #575c74;
@@ -61,11 +64,13 @@
 			background: #87bc2c;
 		}
 	}
+
 	&.new {
 		.support_card_state {
 			color: #87bc2c;
 		}
 	}
+
 	&.waiting {
 		.support_card_state {
 			color: #ed8e00;
@@ -76,8 +81,10 @@
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 }
+
 .support_middle {
-	padding-bottom: 121px;
+	max-height: 100%;
+    overflow-y: auto;
 	border-radius: 5px;
 	background: #1a1d26;
 }
@@ -85,6 +92,7 @@
 .support_card:nth-child(n + 2) {
 	width: 100%;
 }
+
 .support_card_left {
 	display: flex;
 	align-items: center;
@@ -95,20 +103,24 @@
 	width: 100%;
 	background: #31343c;
 }
+
 .support_card_left img {
 	margin-right: 16px;
 }
+
 .support_card_theme {
 	margin-bottom: 8px;
 	font-size: 15px;
 	font-weight: 600;
 	color: #575c74;
 }
+
 .support_card_text {
 	color: #575c74;
 	font-weight: 600;
 	font-size: 13px;
 }
+
 .support_card_state {
 	text-transform: uppercase;
 	color: #575c74;
@@ -133,6 +145,7 @@
 	font-size: 13px;
 	margin-left: auto;
 }
+
 .support_card_column {
 	display: flex;
 	flex-direction: column;
@@ -157,6 +170,7 @@
 	&:nth-child(odd) {
 		margin-left: auto;
 	}
+
 	&:nth-child(n + 2) {
 		margin-top: 32px;
 	}
@@ -171,26 +185,28 @@
 .message_right {
 	width: 100%;
 	margin-top: 8px;
-
-	
 }
+
 .message_row {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	margin-bottom: 7px;
-	& .admin {
+
+	.admin {
 		color: #FF782C;
 		font-weight: 600;
 		font-size: 14px;
 	}
-	& .time {
+
+	.time {
 		color: #BAC0D1;
 		font-size: 13px;
 		font-weight: 600;
 	}
-	& .user {
+
+	.user {
 		color: #fff;
 		font-weight: 600;
 		font-size: 14px;

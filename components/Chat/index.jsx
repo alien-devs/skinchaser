@@ -1,9 +1,22 @@
+import { useState, useEffect } from 'react'
 import Input from '../Input'
 import s from './chat.module.scss'
 import ChatAlert from './ChatAlert'
 import Message from './Message'
 
-const Chat = () => {
+const Chat = (props) => {
+    const [state, setState] = useState(true)
+
+    useEffect(() => {
+        if(props.hide) {
+            setState(false)
+        }
+    }, [props.hide])
+
+    useEffect(() => {
+        !state ? document.body.classList.add("full-width") : document.body.classList.remove("full-width")
+    }, [state])
+
     return (
         <div className={`${s.chat} chat`}>
             <div className={s.giveaway}>
@@ -35,7 +48,7 @@ const Chat = () => {
                         </div>
                         <span className={s.subtitle}>Правила чата</span>
                     </div>
-                    <button className={s.close + " secondary-btn chat-switcher"}>
+                    <button onClick={() => setState(!state)} className={s.close + " secondary-btn chat-switcher"}>
                         <img src="/img/chat/arrow.svg" alt="" />
                     </button>
                 </div>

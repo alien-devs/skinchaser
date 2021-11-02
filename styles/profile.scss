@@ -7,7 +7,7 @@
 .profile_info_list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-column-gap: 25px;
+	grid-gap: 25px;
 }
 
 .profile_left {
@@ -62,7 +62,7 @@
 
 .profile_inventory_list {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	grid-gap: 14px;
 	margin-top: 23px;
 	overflow-y: scroll;

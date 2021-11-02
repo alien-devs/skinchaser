@@ -22,6 +22,16 @@
     display: grid;
     grid-template-columns: 398px 1fr;
     grid-gap: 24px;
+
+    .inventory {
+        position: sticky;
+        top: 0;
+    }
+
+    .inventory-list {
+        height: calc(100vh - 297px);
+        overflow-y: auto;
+    }
 }
 
 .grey-block {

@@ -2,7 +2,6 @@ import MainLayout from "../../components/MainLayout";
 import { ar } from "../../data/arrays";
 import Item from "../../components/Item";
 import Dropdown from "../../components/Dropdown";
-import Slider, { Range } from 'rc-slider';
 
 const Shop = () => {
 	return (
@@ -74,10 +73,10 @@ const Shop = () => {
 						<Dropdown list={["Цена", "Тип", "Популярность"]} />
 						<Dropdown list={["Тип", "Цена", "Популярность"]} />
 						<Dropdown list={["Цена", "Популярность", "Тип"]} />
-						<div className="shop-range">
+						{/* <div className="shop-range">
 							<Slider />
 							<Range />
-						</div>
+						</div> */}
 					</div>
 					<div className="shop_right_list">
 						{ar.map((key) => (

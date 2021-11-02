@@ -35,8 +35,8 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass }) => 
 				openSettingsModal={() => setSettingsState(true)}
 				openShopModal={() => setShopState(true)}
 			/>
-			<div className={`content ${hideChat ? "full-width" : ""}`}>
-				<Chat />
+			<div className={`content ${hideChat ? "full" : ""}`}>
+				<Chat hide={hideChat}/>
 				<main className={mainClass}>
 					{children}
 				</main>

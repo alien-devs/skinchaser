@@ -89,7 +89,7 @@
 .wheel_main {
 	border-radius: 5px;
 	height: 100%;
-	background: url("/img/wheel/main.png") no-repeat center;
+	background: url("/img/wheel/main.png") no-repeat center center / cover;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -198,7 +198,7 @@
 .wheel_bets {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 9px;
+	grid-gap: 9px;
 }
 
 .wheel_bet {

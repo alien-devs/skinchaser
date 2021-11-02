@@ -73,7 +73,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 22px;
-    padding-top: 25px;
+    margin-top: 25px;
+    width: calc(100% + 14px);
+    padding-right: 14px;
 }
 
 .empty-inventory {

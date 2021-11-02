@@ -1,0 +1,79 @@
+@media all and (max-width: 1700px) {
+    main {
+        padding-right: 24px;
+    }
+
+    .jackpot-main {
+        height: auto;
+        grid-template-areas:
+            "A A A A"
+            "B B C C";
+        grid-template-columns: none;
+
+        & > div {
+            height: 172px;
+
+            &:nth-child(1) {
+                grid-area: A;
+            }
+    
+            &:nth-child(2) {
+                grid-area: B;
+            }
+    
+            &:nth-child(3) {
+                grid-area: C;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1500px) {
+    .profile_info_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .wheel_right {
+        grid-template-rows: auto 412px 1fr;
+    }
+
+    .wheel_bets {
+        grid-template-columns: none;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .statistics {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+    .statistics_metric {
+        height: 70px;
+    }
+
+    .jackpot-roulette__content {
+        padding-top: 50px;
+
+        .status {
+            transform: translate(-50%, -40px);
+        }
+    }
+
+    div.jackpot-roulette {
+        height: auto;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .jackpot__bet-heading {
+        flex-direction: column;
+        align-items: flex-start;
+
+        & > div {
+            &:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+}

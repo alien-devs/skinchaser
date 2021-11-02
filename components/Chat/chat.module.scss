@@ -6,6 +6,7 @@
     background: #181B23;
     width: 400px;
     z-index: 15;
+    transition: all .3s ease;
 }
 
 .header {
@@ -193,6 +194,7 @@
     justify-content: space-between;
     padding: 0 24px 0 27px;
     position: relative;
+    overflow: hidden;
 
     & > img {
         position: relative;

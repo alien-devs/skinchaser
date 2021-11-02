@@ -47,6 +47,16 @@ const Support = () => {
 			text: "Почему то выкидывает после редикта на платежку =(",
 			imgUrl: "/img/support/logo.png",
 		},
+		{
+			title: "Не могу пополнить счёт",
+			text: "Почему то выкидывает после редикта на платежку =(",
+			imgUrl: "/img/support/logo.png",
+		},
+		{
+			title: "Не могу пополнить счёт",
+			text: "Почему то выкидывает после редикта на платежку =(",
+			imgUrl: "/img/support/logo.png",
+		}
 	];
 
 	const statusHandler = (status) => {
