@@ -69,9 +69,7 @@ const Faq = () => {
 				<h1 className="faq_page_title">Часто задаваемые вопросы</h1>
 				<div className="faq_page_list">
 					{
-						ar.map((i, key) => <Dropdown
-							isOpen={key == 0}
-						/>)
+						ar.map((i, key) => <Dropdown />)
 					}
 				</div>
 			</div>
