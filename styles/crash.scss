@@ -2,6 +2,10 @@
 	display: grid;
 	grid-template-columns: 398px 1fr;
 	grid-column-gap: 24px;
+
+	.inventory-list {
+		height: calc(100vh - 716px);
+	}
 }
 
 .crash_right {
@@ -12,7 +16,7 @@
 .crash_row {
 	display: grid;
 	grid-template-columns: 673px 1fr;
-	grid-column-gap: 24px;
+	grid-gap: 24px;
 	margin: 24px 0;
 }
 
@@ -20,6 +24,13 @@
 	background: url("/img/crash/bg_main.png");
 	padding: 24px;
 	position: relative;
+}
+
+.crash_left {
+	& > div {
+		position: sticky;
+		top: 0;
+	}
 }
 
 .crash_prev_bets {
@@ -131,9 +142,9 @@
 
 .crash_set_default {
 	margin-top: 16px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 16px;
 }
 
 .crash_set_default_card {
@@ -142,7 +153,7 @@
 	justify-content: center;
 	border-radius: 5px;
 	height: 40px;
-	width: 64px;
+	width: 100%;
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 600;
@@ -204,7 +215,7 @@
 
 .crash_current_bets {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
 	grid-gap: 24px;
 }
 
@@ -279,11 +290,11 @@
 	justify-content: space-between;
 
 	&.green {
-		background: url("/img/crash/footer.png") no-repeat;
+		background: url("/img/crash/footer.png") no-repeat center center / cover;
 	}
 
 	&.red {
-		background: url("/img/crash/footer2.png") no-repeat;
+		background: url("/img/crash/footer2.png") no-repeat center center / cover;
 	}
 }
 

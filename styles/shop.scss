@@ -3,7 +3,6 @@
 	grid-template-columns: 568px auto;
 	grid-column-gap: 24px;
 	overflow: hidden;
-	height: 929px;
 }
 
 .shop_left {
@@ -68,7 +67,7 @@
 	height: 40px;
 	display: grid;
 	grid-template-columns: 162px 119px 1fr;
-	grid-column-gap: 8px;
+	grid-gap: 8px;
 }
 
 .shop_filter_find_input,
@@ -87,7 +86,7 @@
 
 .shop_left_inventory {
 	display: grid;
-	grid-template-columns: 164px 164px 164px;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 	grid-gap: 14px;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -154,10 +153,11 @@
 .shop_right_list {
 	margin-top: 22px;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 	grid-gap: 3px;
-	overflow-y: scroll;
-	height: 842px;
+	overflow-y: auto;
+	max-height: 860px;
+	padding-bottom: 24px;
 	padding-right: 16px;
 	width: calc(100% + 16px);
 }
@@ -188,3 +188,84 @@
 	width: 100%;
 }
 
+.rangeslider-horizontal {
+	height: 3px !important;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: block;
+		background: #2F3241;
+		z-index: 1;
+		width: 2px;
+		height: 16px;
+	}
+}
+
+.rangeslider, .rangeslider .rangeslider__fill {
+	box-shadow: none !important;
+}
+
+.rangeslider-horizontal .rangeslider__handle {
+	width: 9px !important;
+	height: 9px !important;
+	z-index: 2;
+}
+
+.rangeslider-horizontal .rangeslider__fill {
+	z-index: 2;
+	position: relative;
+}
+
+.rangeslider .rangeslider__handle {
+	box-shadow: none !important;
+	border: 1px solid #87BC2C !important;
+	background: #87BC2C !important;
+}
+
+.rangeslider-horizontal .rangeslider__handle:after {
+	display: none;
+}
+
+.rangeslider {
+	background: #2F3241 !important;
+	margin: 11px 0 !important;
+}
+
+.rangeslider-horizontal .rangeslider__handle:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 3px;
+	height: 3px;
+	display: block;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.shop-range-values {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	span {
+		font-weight: 600;
+		font-size: 11px;
+		color: #575C74;
+
+		&:nth-child(2) {
+			text-align: center;
+		}
+
+		&:nth-child(3) {
+			text-align: right;
+		}
+	}
+}

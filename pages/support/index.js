@@ -1,6 +1,6 @@
-import Ava from "../../components/Ava";
-import Input from "../../components/Input";
-import MainLayout from "../../components/MainLayout";
+import Ava from "../../components/Ava"
+import Input from "../../components/Input"
+import MainLayout from "../../components/MainLayout"
 
 const Support = () => {
 	const supportItems = [
@@ -57,7 +57,7 @@ const Support = () => {
 			text: "Почему то выкидывает после редикта на платежку =(",
 			imgUrl: "/img/support/logo.png",
 		}
-	];
+	]
 
 	const statusHandler = (status) => {
 		if (status == "new") {
@@ -67,7 +67,7 @@ const Support = () => {
 		} else {
 			return "Вопрос решен";
 		}
-	};
+	}
 
 	return (
 		<MainLayout hideChat>
@@ -144,7 +144,7 @@ const Support = () => {
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Support;
+export default Support

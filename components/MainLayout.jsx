@@ -5,7 +5,6 @@ import Header from "./Header"
 import Deposit from "./modals/Deposit"
 import Modal from "./modals/Modal"
 import Settings from "./modals/Settings"
-import Notification from "./modals/Notification"
 import Shop from "./modals/Shop"
 
 const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass }) => {

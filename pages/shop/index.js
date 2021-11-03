@@ -1,9 +1,14 @@
-import MainLayout from "../../components/MainLayout";
-import { ar } from "../../data/arrays";
-import Item from "../../components/Item";
-import Dropdown from "../../components/Dropdown";
+import 'react-rangeslider/lib/index.css'
+import MainLayout from "../../components/MainLayout"
+import { ar } from "../../data/arrays"
+import Item from "../../components/Item"
+import Dropdown from "../../components/Dropdown"
+import Slider from 'react-rangeslider'
+import { useState } from "react"
 
 const Shop = () => {
+	const [sliderValue, setSliderValue] = useState(50)
+
 	return (
 		<MainLayout>
 			<div className="shop_page">
@@ -73,10 +78,18 @@ const Shop = () => {
 						<Dropdown list={["Цена", "Тип", "Популярность"]} />
 						<Dropdown list={["Тип", "Цена", "Популярность"]} />
 						<Dropdown list={["Цена", "Популярность", "Тип"]} />
-						{/* <div className="shop-range">
-							<Slider />
-							<Range />
-						</div> */}
+						<div className="shop-range">
+							<Slider
+								value={sliderValue}
+								onChange={e => setSliderValue(e)}
+								tooltip={false}
+							/>
+							<div className="shop-range-values">
+								<span>0</span>
+								<span>2500</span>
+								<span>5000</span>
+							</div>
+						</div>
 					</div>
 					<div className="shop_right_list">
 						{ar.map((key) => (
@@ -86,7 +99,7 @@ const Shop = () => {
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Shop;
+export default Shop

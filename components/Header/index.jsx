@@ -7,6 +7,7 @@ import { useOnClickOutside } from "../../lib/hooks"
 
 const Header = (props) => {
 	const [sound, setSound] = useState(true)
+	const [menu, setMenu] = useState(false)
 	const [notifications, setNotifications] = useState(false)
 	const router = useRouter()
 
@@ -42,7 +43,12 @@ const Header = (props) => {
 					</button>
 				</div>
 			</div>
-			<nav>
+			<div className={s.burger} onClick={() => setMenu(!menu)}>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav className={menu && s.opened}>
 				{
 					links.map((i, key) => (
 						<Link href={`/${i.path}`} key={key}>
@@ -68,9 +74,11 @@ const Header = (props) => {
 					>Магазин</button>
 				</div>
 				<div className={s.profile}>
-					<div className={s.ava}>
-						<img src="/img/general/ava.png" alt="" />
-					</div>
+					<Link href="/profile">
+						<div className={s.ava}>
+							<img src="/img/general/ava.png" alt="" />
+						</div>
+					</Link>
 					<div className={s.player}>
 						<Link href="/profile">
 							<span className={s.name}>DigitalNox Design</span>

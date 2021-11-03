@@ -2,16 +2,22 @@
 	display: grid;
 	grid-template-columns: 398px 1fr;
 	grid-column-gap: 24px;
+	
+	.inventory-list {
+		height: calc(100vh - 679px);
+		position: sticky;
+		top: 0;
+	}
 }
 
 .wheel_left {
-	display: grid;
-	grid-template-rows: auto 1fr;
-	grid-gap: 25px;
+	display: flex;
+	flex-direction: column;
 }
 
 .wheel_ratio_choose {
 	padding: 24px 24px 18px 24px;
+	margin-bottom: 24px;
 	background: url("/img/wheel/ratio_choose_bg.png") no-repeat center / cover;
 }
 
@@ -39,6 +45,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
 	img {
 		z-index: 0;
 		position: relative;
@@ -52,6 +59,7 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-column-gap: 8px;
 }
+
 .wheel_option {
 	display: flex;
 	align-items: center;
@@ -60,15 +68,19 @@
 	border-radius: 5px;
 	cursor: pointer;
 	margin-bottom: 17px;
+
 	&.orange {
 		border: 1px solid #f7753e;
 	}
+
 	&.green {
 		border: 1px solid #14c565;
 	}
+
 	&.blue {
 		border: 1px solid #1d40f0;
 	}
+
 	&.cyan {
 		border: 1px solid #1d7ef0;
 	}
@@ -80,6 +92,7 @@
 		padding: 12px 0;
 	}
 }
+
 .wheel_right {
 	display: grid;
 	grid-row-gap: 24px;
@@ -99,7 +112,7 @@
 .wheel-main__content {
 	background: url("/img/wheel/drum-bg.png") no-repeat 43% 25%;
 
-	& > div, {
+	& > div {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -213,22 +226,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
     &.blue {
         background: #0530C6;
     }
+
     .white {
         color: #fff;
     }
+
 	h2 {
 		color: #9193a7;
 		font-size: 14px;
 		font-weight: bold;
         display: flex;
         align-items: center;
-        & img {
+
+        img {
             margin-left: 14px;
         }
 	}
+
 	p {
 		display: flex;
 		align-items: center;
@@ -248,6 +266,8 @@
 	grid-template-rows: 46px;
 	grid-row-gap: 8px;
 	padding: 0 20px 17px 5px;
+	max-height: calc(100vh - 775px);
+    overflow-y: auto;
 }
 
 .wheel_bet_row {
@@ -268,6 +288,7 @@
 	align-items: center;
    
 }
+
 .wheel_bet_more {
 	background: #1f222c;
 	border: 1px solid #2c313f;

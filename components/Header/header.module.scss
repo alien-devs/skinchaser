@@ -16,6 +16,46 @@
         display: flex;
         align-items: center;
         height: 100%;
+
+        @media all and (max-width: 1700px) {
+            position: absolute;
+            background: #1A1D26;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            display: none;
+
+            &.opened {
+                display: flex;
+            }
+        }
+    }
+
+    @media all and (max-width: 1100px) {
+        position: fixed;
+    }
+}
+
+.burger {
+    display: none;
+    margin-left: 24px;
+    cursor: pointer;
+
+    @media all and (max-width: 1700px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18px;
+    }
+
+    span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        border-radius: 4px;
+        background: #ccc;
     }
 }
 
@@ -44,6 +84,8 @@
 }
 
 .ava {
+    cursor: pointer;
+    
     img {
         height: 86px;
     }
@@ -132,10 +174,25 @@
             margin-right: 19px;
         }
     }
+
+    @media all and (max-width: 1300px) {
+        button {
+            font-size: 10px;
+            padding: 12px 15px;
+        }
+    }
 }
 
 .profile {
     margin: 0 24px;
+
+    @media all and (max-width: 1300px) {
+        margin: 0 15px;
+
+        img {
+            height: 56px;
+        }
+    }
 }
 
 .buttons {
@@ -158,6 +215,10 @@
     flex-direction: column;
     margin-left: 10px;
     width: 130px;
+
+    @media all and (max-width: 1300px) {
+        display: none;
+    }
 }
 
 .name {

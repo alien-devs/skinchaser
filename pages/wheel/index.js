@@ -1,7 +1,7 @@
-import Inventory from "../../components/Inventory";
-import MainLayout from "../../components/MainLayout";
-import Statistics from "../../components/Statistics";
-import { ar } from "../../data/arrays";
+import Inventory from "../../components/Inventory"
+import MainLayout from "../../components/MainLayout"
+import Statistics from "../../components/Statistics"
+import { ar } from "../../data/arrays"
 
 const Wheel = () => {
 	return (
@@ -196,7 +196,7 @@ const Wheel = () => {
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Wheel;
+export default Wheel

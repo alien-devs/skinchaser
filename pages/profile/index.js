@@ -1,6 +1,6 @@
-import MainLayout from "../../components/MainLayout";
-import Item from "../../components/Item";
-import Dropdown from "../../components/Dropdown";
+import MainLayout from "../../components/MainLayout"
+import Item from "../../components/Item"
+import Dropdown from "../../components/Dropdown"
 import { ar } from "../../data/arrays"
 
 const Profile = () => {
@@ -189,7 +189,7 @@ const Profile = () => {
 				</div>
 			</div>
 		</MainLayout>
-	);
-};
+	)
+}
 
-export default Profile;
+export default Profile

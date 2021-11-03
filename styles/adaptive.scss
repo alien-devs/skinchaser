@@ -26,11 +26,22 @@
             }
         }
     }
+
+    .support_page {
+        grid-template-columns: 300px 1.5fr 1fr;
+    }
 }
 
 @media all and (max-width: 1500px) {
     .profile_info_list {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .shop_modal {
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%) scale(1) !important;
     }
 
     .wheel_right {
@@ -40,6 +51,49 @@
     .wheel_bets {
         grid-template-columns: none;
     }
+
+    .crash_row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .shop_filter {
+        grid-template-columns: none;
+        height: auto;
+
+        & > * {
+            height: 40px;
+        }
+    }
+
+    .shop_page {
+        grid-template-columns: 400px 1fr;
+    }
+
+    .wheel_bet_main {
+        overflow-y: auto;
+        max-height: 343px;
+    }
+
+    .support_page {
+        grid-template-areas:
+        "B B C C"
+        "A A A A";
+        height: auto;
+    }
+
+    .support_left {
+        grid-area: A;
+        height: 255px;
+    }
+
+    .support_middle {
+        grid-area: B;
+        max-height: 700px;
+    }
+
+    .support_right {
+        grid-area: C;
+    }
 }
 
 @media all and (max-width: 1300px) {
@@ -48,8 +102,16 @@
         height: auto;
     }
 
+    .deposit_right {
+        width: 400px;
+    }
+
     .statistics_metric {
         height: 70px;
+
+        button {
+            width: 100%;
+        }
     }
 
     .jackpot-roulette__content {
@@ -60,8 +122,33 @@
         }
     }
 
+    .support_page {
+        grid-template-areas:
+            "B B B"
+            "C C C"
+            "A A A";
+        height: auto;
+    }
+
+    .support_right {
+        height: 700px;
+    }
+
+    .shop-filter {
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
+
     div.jackpot-roulette {
         height: auto;
+    }
+
+    .crash_row {
+        grid-template-columns: none;
+    }
+
+    .crash_main {
+        height: 360px;
+        background: url(/img/crash/bg_main.png) no-repeat center center / cover;
     }
 }
 
@@ -75,5 +162,46 @@
                 margin-left: auto;
             }
         }
+    }
+
+    .shop_right_list {
+        max-height: 100%;
+    }
+
+    .content {
+        height: auto;
+    }
+
+    .shop_page, .wheel-page {
+        display: flex;
+        grid-gap: 0;
+    }
+
+    .shop_left {
+        width: 60%;
+        margin-right: 24px;
+    }
+
+    .wheel_left {
+        width: 40%;
+        margin-right: 24px;
+    }
+
+    .wheel_left {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0;
+    }
+
+    .wheel_ratio_choose {
+        margin-bottom: 24px;
+    }
+
+    .wheel_right {
+        width: 100%;
+    }
+
+    .inventory-list {
+        height: 596px;
     }
 }
