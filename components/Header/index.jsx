@@ -62,57 +62,59 @@ const Header = (props) => {
 					))
 				}
 			</nav>
-			<div className={s.right}>
-				<div className={s.mainButtons}>
-					<button
-						className="primary-btn"
-						onClick={props.openDepositModal}
-					>Пополнить</button>
-					<button
-						className="primary-btn yellow"
-						onClick={props.openShopModal}
-					>Магазин</button>
-				</div>
-				<div className={s.profile}>
-					<Link href="/profile">
-						<div className={s.ava}>
-							<img src="/img/general/ava.png" alt="" />
-						</div>
-					</Link>
-					<div className={s.player}>
-						<Link href="/profile">
-							<span className={s.name}>DigitalNox Design</span>
+			{
+				!props.auth ? <button className="auth-btn primary-btn" onClick={() => props.setAuth(true)}>
+					<img src="/img/general/steam.svg" />
+					Авторизация
+				</button> : <div className={s.right}>
+					<div className={s.mainButtons}>
+						<button
+							className="primary-btn"
+							onClick={props.openDepositModal}
+						>Пополнить</button>
+						<Link href="/shop">
+							<button
+								className="primary-btn yellow"
+							>Магазин</button>
 						</Link>
-						<span className={s.balance}>
-							<img src="/img/general/coin.svg" alt="" />
-							100
-						</span>
 					</div>
-				</div>
-				<div className={s.buttons}>
-					<button
-						className="secondary-btn"
-						onClick={props.openSettingsModal}
-					>
-						<img src="/img/header/settings.svg" alt="" />
-					</button>
-					<div ref={notificationRef} className={s.notifications}>
-						<button className="secondary-btn" onClick={() => setNotifications(!notifications)}>
-							<img src="/img/header/notifications.svg" alt="" />
+					<div className={s.profile}>
+						<Link href="/profile">
+							<div className={s.ava}>
+								<img src="/img/general/ava.png" alt="" />
+							</div>
+						</Link>
+						<div className={s.player}>
+							<Link href="/profile">
+								<span className={s.name}>DigitalNox Design</span>
+							</Link>
+							<span className={s.balance}>
+								<img src="/img/general/coin.svg" alt="" />
+								100
+							</span>
+						</div>
+					</div>
+					<div className={s.buttons}>
+						<button
+							className="secondary-btn"
+							onClick={props.openSettingsModal}
+						>
+							<img src="/img/header/settings.svg" alt="" />
 						</button>
-						<Notification
-							state={notifications}
-						/>
+						<div ref={notificationRef} className={s.notifications}>
+							<button className="secondary-btn" onClick={() => setNotifications(!notifications)}>
+								<img src="/img/header/notifications.svg" alt="" />
+							</button>
+							<Notification
+								state={notifications}
+							/>
+						</div>
+						<button className="secondary-btn" onClick={() => props.setAuth(false)}>
+							<img src="/img/header/exit.svg" alt="" />
+						</button>
 					</div>
-					<button className="secondary-btn">
-						<img src="/img/header/exit.svg" alt="" />
-					</button>
 				</div>
-			</div>
-			{/* <button className="auth-btn primary-btn">
-				<img src="/img/general/steam.svg" />
-				Авторизация
-			</button> */}
+			}
 		</header>
 	)
 }

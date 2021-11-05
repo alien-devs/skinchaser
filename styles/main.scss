@@ -399,3 +399,26 @@ h5 {
 		background: #8D7653;
 	}
 }
+
+.cs-skin {
+	background: url("/img/general/skins/purple.svg") no-repeat center center / contain;
+
+	&.milspec {
+		background-image: url("/img/general/skins/milspec.svg");
+	}
+
+	&.pink {
+		background-image: url("/img/general/skins/pink.svg");
+	}
+
+	&.gold {
+		background-image: url("/img/general/skins/gold.svg");
+	}
+}
+
+// !!!
+.shop-opened {
+	header, .chat {
+		z-index: -1;
+	}
+}

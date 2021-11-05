@@ -4,7 +4,7 @@
 	grid-column-gap: 24px;
 
 	.inventory-list {
-		height: calc(100vh - 716px);
+		height: calc(100vh - 705px);
 	}
 }
 
@@ -15,7 +15,7 @@
 
 .crash_row {
 	display: grid;
-	grid-template-columns: 673px 1fr;
+	grid-template-columns: 1fr 350px;
 	grid-gap: 24px;
 	margin: 24px 0;
 }
@@ -27,6 +27,8 @@
 }
 
 .crash_left {
+	overflow: hidden;
+	
 	& > div {
 		position: sticky;
 		top: 0;
@@ -36,8 +38,8 @@
 .crash_prev_bets {
 	display: flex;
 	align-items: center;
-	position: relative;
 	width: 440px;
+	position: relative;
 
 	&::after {
 		content: "";
@@ -56,6 +58,7 @@
 
 .crash_prev_bet {
 	height: 26px;
+	cursor: pointer;
 	border-radius: 5px;
 	padding: 0 9px;
 	font-size: 12px;
@@ -153,6 +156,7 @@
 	justify-content: center;
 	border-radius: 5px;
 	height: 40px;
+	cursor: pointer;
 	width: 100%;
 	text-transform: uppercase;
 	font-size: 13px;
@@ -274,14 +278,12 @@
 	margin-bottom: 16px;
 
 	img {
-		width: 61px;
-		height: 42px;
+		height: 62px;
 	}
 }
 
 .crash_current_footer {
 	height: 74px;
-	position: relative;
 	padding: 11px 24px 11px;
 	background: #212530;
 	border-radius: 0px 0px 5px 5px;
@@ -295,6 +297,14 @@
 
 	&.red {
 		background: url("/img/crash/footer2.png") no-repeat center center / cover;
+	}
+
+	& > div {
+		&:last-child {
+			img {
+				height: 62px;
+			}
+		}
 	}
 }
 
@@ -340,6 +350,7 @@
 	background: url("/img/crash/bet_bg.png") no-repeat center;
 	background-size: cover;
 	margin-bottom: 24px;
+	overflow: hidden;
 
 	.line {
 		width: 100%;
@@ -351,24 +362,46 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 80px;
+		padding-top: 239px;
 		margin-bottom: 24px;
 		overflow: hidden;
 		height: auto;
-		background: url("/img/crash/sphere.png") no-repeat center;
 
 		h2 {
 			font-weight: bold;
 			font-size: 15px;
 		}
 
+		p {
+			font-weight: bold;
+			font-size: 13px;
+			color: #75777A;
+		}
+
 		img {
 			position: relative;
+
+			&:nth-child(2) {
+				width: 231px;
+				margin: 0 40px;
+			}
+
+			&:nth-child(1),
+			&:nth-child(3) {
+				width: 130px;
+			}
 		}
 	}
 
 	.gallery {
-		margin-bottom: 58px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		background: url("/img/crash/sphere.png") no-repeat center center;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	
 	.bottomSide {

@@ -7,6 +7,12 @@
     width: 400px;
     z-index: 15;
     transition: all .3s ease;
+
+    @media all and (max-width: 1300px) {
+        top: 0;
+        width: 100%;
+        z-index: 20;
+    }
 }
 
 .header {

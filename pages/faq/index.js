@@ -6,14 +6,13 @@ const Dropdown = ({ isOpen }) => {
 	const [opened, setOpened] = useState(isOpen ?? false)
 
 	return (
-		<div className={`faq_page_card ${opened ? "opened" : ""}`}>
+		<div className={`faq_page_card ${opened ? "opened" : ""}`} onClick={() => setOpened(!opened)}>
 			<div className="faq_page_card_row">
 				<h2 className="faq_page_card_title">
 					How do the Gem event work?
 				</h2>
 				<div
 					className="faq_page_card_icon_block"
-					onClick={() => setOpened(!opened)}
 				>
 					<img src="/img/faq/arrow_up.svg" alt="" />
 				</div>

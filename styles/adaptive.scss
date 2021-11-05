@@ -52,10 +52,6 @@
         grid-template-columns: none;
     }
 
-    .crash_row {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .shop_filter {
         grid-template-columns: none;
         height: auto;
@@ -93,6 +89,11 @@
 
     .support_right {
         grid-area: C;
+    }
+
+    .crash_bet_know {
+        bottom: 16px;
+        top: auto;
     }
 }
 
@@ -148,7 +149,7 @@
 
     .crash_main {
         height: 360px;
-        background: url(/img/crash/bg_main.png) no-repeat center center / cover;
+        background: url(/img/crash/bg_main.png) no-repeat left center / cover;
     }
 }
 
@@ -162,6 +163,12 @@
                 margin-left: auto;
             }
         }
+    }
+
+    .jackpot-page {
+        grid-template-areas:
+            "B"
+            "A";
     }
 
     .shop_right_list {
@@ -202,6 +209,150 @@
     }
 
     .inventory-list {
-        height: 596px;
+        height: 596px !important;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .crash-page,
+    .profile_page,
+    .wheel-page,
+    .jackpot-page {
+        grid-template-columns: none;
+    }
+
+    .wheel-page,
+    .shop_page {
+        flex-direction: column;
+    }
+
+    .wheel_left,
+    .shop_left {
+        width: 100%;
+    }
+
+    .crash_left,
+    .profile_left,
+    .wheel_left,
+    .shop_left {
+        margin-bottom: 24px;
+    }
+
+    .crash_prev_bets {
+        width: 300px;
+        overflow: hidden;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .primary-btn {
+        font-size: 11px;
+        padding: 12px 15px;
+    }
+
+    .support_page {
+        grid-template-areas:
+        "B"
+        "C"
+        "A";
+        grid-template-columns: none;
+    }
+
+    .shop-filter {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .faq_page_card_title {
+        font-size: 14px;
+    }
+
+    .card_current_bet_row {
+        flex-wrap: wrap;
+    }
+
+    .crash_current_bets {
+        grid-template-columns: none;
+    }
+
+    .crash_prev_bets {
+        width: 250px;
+    }
+
+    .profile_info_list {
+        grid-gap: 12px;
+    }
+    
+    .support_card {
+        padding: 0 12px;
+    }
+
+    .support_card_state {
+        display: none;
+    }
+
+    .support_card_text {
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 11px;
+    }
+
+    .support_card_state,
+    .shop_cost_block_title {
+        font-size: 11px;
+    }
+
+    .support_card_theme,
+    .shop_cost_block_text {
+        font-size: 13px;
+    }
+
+    .faq_page_title {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .support_message {
+        width: 100%;
+    }
+
+    .statistics_metric h2 {
+        font-size: 11px;
+    }
+
+    .statistics_metric {
+        padding: 0 10px;
+    }
+
+    .jackpot-roulette__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jackpot-roulette__previous {
+        margin-top: 15px;
+    }
+
+    main {
+        padding: 12px !important;
+    }
+
+    .profile_info_list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profile_withdraw_row input {
+        width: 100%;
+    }
+
+    .graph {
+        .line.big {
+            width: 100px;
+        }
+
+        .line {
+            width: 70px;
+        }
     }
 }

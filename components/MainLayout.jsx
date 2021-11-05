@@ -8,6 +8,8 @@ import Settings from "./modals/Settings"
 import Shop from "./modals/Shop"
 
 const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass }) => {
+	const [auth, setAuth] = useState(true)
+
 	const [depositState, setDepositState] = useState(false)
 	const [settingsState, setSettingsState] = useState(false)
 	const [shopState, setShopState] = useState(false)
@@ -33,6 +35,8 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass }) => 
 				openDepositModal={() => setDepositState(true)}
 				openSettingsModal={() => setSettingsState(true)}
 				openShopModal={() => setShopState(true)}
+				auth={auth}
+				setAuth={setAuth}
 			/>
 			<div className={`content ${hideChat ? "full" : ""}`}>
 				<Chat hide={hideChat}/>

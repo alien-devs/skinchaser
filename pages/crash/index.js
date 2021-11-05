@@ -1,8 +1,11 @@
 import MainLayout from "../../components/MainLayout"
 import Statistics from "../../components/Statistics"
 import Inventory from "../../components/Inventory"
+import { useState } from "react"
 
 const Crash = () => {
+	const [x, setX] = useState(3)
+
 	return (
 		<MainLayout>
 			<div className="crash-page">
@@ -11,11 +14,12 @@ const Crash = () => {
 						<div className="crash_bet">
 							<div className="topSide">
 								<div className="gallery">
-									<img src="/img/crash/left_bet3.png" alt="" style={{right: "14px"}}/>
-									<img src="/img/crash/left_bet1.png" alt="" />
-									<img src="/img/crash/left_bet2.png" alt="" style={{left: '14px'}}/>
+									<img src="/img/crash/m4.png" alt="" />
+									<img src="/img/crash/m4.png" alt="" />
+									<img src="/img/crash/m4.png" alt="" />
 								</div>
-								<h2>Draining Wight</h2>
+								<h2>M4A4</h2>
+								<p>Магний</p>
 							</div>
 							<div className="line"></div>
 							<div className="bottomSide">
@@ -89,23 +93,23 @@ const Crash = () => {
 							<div className="crash_set_bet_row">
 								<div className="crash_autostop">
 									<h5>АВТО-ВЫВОД</h5>
-									<input type="number" placeholder="3.00X" />
+									<input type="number" placeholder={`${x}X`} />
 								</div>
 								<div className="crash_beted_items">
 									<h2>ПРЕДМЕТОВ:</h2>
 								</div>
 							</div>
 							<div className="crash_set_default">
-								<span className="crash_set_default_card light">
+								<span className="crash_set_default_card light" onClick={() => setX(1.2)}>
 									1.2x
 								</span>
-								<span className="crash_set_default_card dark">
+								<span className="crash_set_default_card dark" onClick={() => setX(2)}>
 									2x
 								</span>
-								<span className="crash_set_default_card light">
+								<span className="crash_set_default_card light" onClick={() => setX(3)}>
 									3x
 								</span>
-								<span className="crash_set_default_card yellow">
+								<span className="crash_set_default_card yellow" onClick={() => setX(4)}>
 									4x
 								</span>
 							</div>
@@ -156,10 +160,10 @@ const Crash = () => {
 									</div>
 								</div>
 								<div className="card_current_bet_row">
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin milspec"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin pink"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>
 							<div className="crash_current_footer green">
@@ -175,11 +179,11 @@ const Crash = () => {
 								</div>
 								<div>
 									<img
-										src="/img/crash/bet.png"
+										src="/img/crash/item.png"
 										alt=""
-										style={{ marginRight: "14px" }}
+										className="cs-skin"
 									/>
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>
 						</div>
@@ -205,10 +209,10 @@ const Crash = () => {
 									</div>
 								</div>
 								<div className="card_current_bet_row">
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin milspec"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin pink"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>
 							<div className="crash_current_footer red">
@@ -224,11 +228,11 @@ const Crash = () => {
 								</div>
 								<div>
 									<img
-										src="/img/crash/bet.png"
+										src="/img/crash/item.png"
 										alt=""
-										style={{ marginRight: "14px" }}
+										className="cs-skin pink"
 									/>
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
 								</div>
 							</div>
 						</div>
@@ -254,10 +258,10 @@ const Crash = () => {
 									</div>
 								</div>
 								<div className="card_current_bet_row">
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin milspec"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin pink"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>
 							<div className="crash_current_footer">
@@ -289,10 +293,10 @@ const Crash = () => {
 									</div>
 								</div>
 								<div className="card_current_bet_row">
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin milspec"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin pink"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>
 							<div className="crash_current_footer">
@@ -324,10 +328,10 @@ const Crash = () => {
 									</div>
 								</div>
 								<div className="card_current_bet_row">
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin milspec"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin pink"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>
 							<div className="crash_current_footer">
@@ -359,10 +363,10 @@ const Crash = () => {
 									</div>
 								</div>
 								<div className="card_current_bet_row">
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
-									<img src="/img/crash/bet.png" alt="" />
+									<img src="/img/crash/item.png" alt="" className="cs-skin milspec"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin pink"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>
 							<div className="crash_current_footer">

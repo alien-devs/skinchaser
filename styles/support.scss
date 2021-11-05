@@ -1,6 +1,6 @@
 .support_page {
 	display: grid;
-	grid-template-columns: 398px 1.5fr 1fr;
+	grid-template-columns: 1fr 3fr 2fr;
 	grid-gap: 24px;
 	height: 100%;
 }
@@ -51,6 +51,7 @@
 	align-items: center;
 	padding: 0 24px;
 	height: 100px;
+	cursor: pointer;
 
 	&.new,
 	&.waiting {

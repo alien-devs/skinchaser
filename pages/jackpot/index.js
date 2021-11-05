@@ -7,9 +7,7 @@ const Jackpot = () => {
     const bets = [1, 1, 1, 1, 1]
 
     return (
-        <MainLayout
-            hideChat
-        >
+        <MainLayout>
             <div className="jackpot-page">
                 <div>
                     <Inventory />

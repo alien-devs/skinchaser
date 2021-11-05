@@ -1,6 +1,7 @@
 import { ar } from "../../../data/arrays"
 import Item from "../../Item"
 import Dropdown from "../../Dropdown"
+import { useEffect } from "react"
 
 const Shop = (props) => {
 	return (
