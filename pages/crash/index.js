@@ -117,7 +117,11 @@ const Crash = () => {
 							<div className="crash_winning">
 								<div className="crash_winning_block">
 									<h2>Ставка</h2>
-									<img src="/img/crash/win1.png" alt="" />
+									<div className="counter_block">
+										<img src="/img/crash/auto_image1.png" alt="" />
+										<span>1000</span>
+										<img src="/img/crash/auto_image2.png" alt="" />
+									</div>
 								</div>
 								<img
 									src="/img/crash/line.png"
@@ -126,7 +130,11 @@ const Crash = () => {
 								/>
 								<div className="crash_winning_block">
 									<h2>ВЫИГРЫШ</h2>
-									<img src="/img/crash/win2.png" alt="" />
+									<div className="counter_block">
+										<img src="/img/crash/auto_image1.png" alt="" />
+										<span className="glow">1000</span>
+										<img src="/img/crash/auto_image2.png" alt="" />
+									</div>
 								</div>
 							</div>
 							<button
