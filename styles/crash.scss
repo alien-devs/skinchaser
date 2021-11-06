@@ -183,6 +183,7 @@
 }
 
 .crash_winning {
+	width: 100%;
 	padding: 0 32px;
 	margin-bottom: 24px;
 	display: flex;
@@ -192,7 +193,8 @@
 
 .crash_winning_line {
 	width: 55px;
-	height: 5px;
+	height: 6px;
+	margin: 0 22px;
 	position: relative;
 	top: 15px;
 }
@@ -453,5 +455,26 @@
 			font-size: 14px;
 			font-weight: bold;
 		}
+	}
+}
+
+
+.counter_block {
+	display: flex;
+	align-items: center;
+
+	span {
+		margin: 0 4px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+	img {
+		width: 13px;
+		height: 40px;
+	}
+
+	.glow {
+		text-shadow: 0px 0px 18px #F69F1D;
 	}
 }
