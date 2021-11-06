@@ -181,7 +181,7 @@
     flex-grow: 1;
 }
 
-.border {
+.border, .topBorder {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -191,6 +191,11 @@
     bottom: 0;
     background: linear-gradient(90deg, rgba(30,39,49,1) 10%, rgba(51,203,62,1) 100%);
     z-index: -2;
+}
+
+.topBorder {
+    top: 0;
+    bottom: auto;
 }
 
 .giveaway {

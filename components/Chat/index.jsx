@@ -20,6 +20,7 @@ const Chat = (props) => {
     return (
         <div className={`${s.chat} chat`}>
             <div className={s.giveaway}>
+                <span className={s.topBorder}></span>
                 <span className={s.effect}></span>
                 <div>
                     <div className={s.giveawaySkin}>
