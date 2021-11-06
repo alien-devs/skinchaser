@@ -3,6 +3,10 @@
         padding-right: 24px;
     }
 
+    .inventory-list {
+        height: 596px !important;
+    }
+
     .jackpot-main {
         height: auto;
         grid-template-areas:
@@ -35,6 +39,10 @@
 @media all and (max-width: 1500px) {
     .profile_info_list {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .shop_modal_list {
+        height: 210px;
     }
 
     .shop_modal {
@@ -207,10 +215,6 @@
     .wheel_right {
         width: 100%;
     }
-
-    .inventory-list {
-        height: 596px !important;
-    }
 }
 
 @media all and (max-width: 1000px) {
@@ -242,6 +246,14 @@
         width: 300px;
         overflow: hidden;
     }
+
+    .shop_modal {
+        width: 500px;
+    }
+
+    .settings_container {
+        width: 350px;
+    }
 }
 
 @media all and (max-width: 500px) {
@@ -250,12 +262,22 @@
         padding: 12px 15px;
     }
 
+    .settings_container  {
+        width: 90%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
     .support_page {
         grid-template-areas:
         "B"
         "C"
         "A";
         grid-template-columns: none;
+    }
+
+    .shop_modal {
+        width: 90%;
     }
 
     .shop-filter {

@@ -40,7 +40,7 @@
 
 .shop_modal_list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
     grid-gap: 14px;
     overflow-y: scroll;
     height: 420px;
