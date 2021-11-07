@@ -254,12 +254,79 @@
     .settings_container {
         width: 350px;
     }
+
+    .payments_list {
+        height: 110px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: calc(100% + 14px);
+        padding-right: 14px;
+        grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    }
+
+    .deposit_type_card {
+        margin-top: 8px;
+    }
+
+    .deposit_right,
+    .deposit_left {
+        width: 100%;
+    }
+
+    .deposit_container {
+        flex-direction: column;
+    }
+
+    .payment {
+        width: 100%;
+    }
+
+    .deposit_type_card {
+        height: 30px;
+        padding: 0 10px;
+
+        &:not(:last-child) {
+
+        }
+    }
+
+    .deposit_right {
+        padding: 0 22px;
+    }
+
+    .modal-container .line {
+        margin: 20px 0;
+    }
+
+    .deposit_bonus {
+        margin-bottom: 14px;
+
+        h2 {
+            font-size: 10px;
+        }
+    }
+
+    .deposit_title {
+        margin-bottom: 15px;
+    }
+
+    .deposit_title.second {
+        margin-bottom: 20px;
+    }
 }
 
 @media all and (max-width: 500px) {
     .primary-btn {
         font-size: 11px;
         padding: 12px 15px;
+    }
+
+    .header-shop {
+        display: none;
+    }
+
+    .deposit_container {
+        width: 90%;
     }
 
     .settings_container  {

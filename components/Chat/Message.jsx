@@ -5,7 +5,7 @@ const Message = () => {
     return (
         <div className={s.message}>
             <div>
-                <Ava />
+                <Ava withStatus/>
                 <div className={s.sender}>
                     <div className="center" style={{justifyContent: "space-between"}}>
                         <span className={s.name}>White CroW</span>

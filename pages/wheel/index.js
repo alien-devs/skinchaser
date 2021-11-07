@@ -3,7 +3,7 @@ import MainLayout from "../../components/MainLayout"
 import Statistics from "../../components/Statistics"
 import { ar } from "../../data/arrays"
 
-const Wheel = () => {
+const Wheel = (props) => {
 	return (
 		<MainLayout>
 			<div className="wheel-page">
@@ -37,7 +37,10 @@ const Wheel = () => {
 							СДЕЛАТЬ СТАВКУ
 						</button>
 					</div>
-					<Inventory />
+					<Inventory
+						shopOpened={props.shopOpened}
+						setShopOpened={props.setShopOpened}
+					/>
 				</div>
 				<div className="wheel_right">
 					<Statistics />

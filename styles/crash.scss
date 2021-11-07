@@ -28,6 +28,7 @@
 
 .crash_left {
 	overflow: hidden;
+	z-index: 1;
 	
 	& > div {
 		position: sticky;
@@ -228,10 +229,14 @@
 .crash_current_bet {
 	background: #1a1d26;
 	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .card_current_bet_info {
 	display: flex;
+	margin-bottom: 20px;
 	align-items: center;
 }
 

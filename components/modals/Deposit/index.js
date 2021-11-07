@@ -12,7 +12,6 @@ const Deposit = (props) => {
 			<div className="deposit_left">
 				<h2
 					className="deposit_title"
-					style={{ marginBottom: "28px" }}
 				>
 					ПОПОЛНЕНИЕ СЧЁТА
 				</h2>
@@ -136,8 +135,7 @@ const Deposit = (props) => {
 			</div>
 			<div className="deposit_right">
 				<h2
-					className="deposit_title"
-					style={{ marginBottom: "47px" }}
+					className="deposit_title second"
 				>
 					ВВЕДИТЕ СУММУ
 				</h2>

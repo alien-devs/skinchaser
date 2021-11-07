@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import Notification from "../modals/Notification"
 import { useOnClickOutside } from "../../lib/hooks"
+import Ava from "../Ava"
 
 const Header = (props) => {
 	const [sound, setSound] = useState(true)
@@ -74,14 +75,14 @@ const Header = (props) => {
 						>Пополнить</button>
 						<Link href="/shop">
 							<button
-								className="primary-btn yellow"
+								className="primary-btn yellow header-shop"
 							>Магазин</button>
 						</Link>
 					</div>
 					<div className={s.profile}>
 						<Link href="/profile">
 							<div className={s.ava}>
-								<img src="/img/general/ava.png" alt="" />
+								<Ava withBg/>
 							</div>
 						</Link>
 						<div className={s.player}>

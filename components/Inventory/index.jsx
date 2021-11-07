@@ -4,7 +4,7 @@ import Modal from "../modals/Modal"
 import Shop from "../modals/Shop"
 import { useState } from "react"
 
-const Inventory = () => {
+const Inventory = (props) => {
     // if(true) {
     //     return (
     //         <div className="inventory">
@@ -17,12 +17,11 @@ const Inventory = () => {
     //         </div>
     //     )
     // }
-    const [shopState, setShopState] = useState(false)
 
     return (
         <>
-            <Modal state={shopState} setState={setShopState}>
-                <Shop close={() => setShopState(false)} />
+            <Modal state={props.shopOpened} setState={props.setShopOpened}>
+                <Shop close={() => props.setShopOpened(false)} />
             </Modal>
             <div className="inventory">
                 <div className="inventory-heading">
@@ -34,7 +33,7 @@ const Inventory = () => {
                         </span>
                     </div>
                     <div>
-                        <button className="inventory__shop-btn" onClick={() => setShopState(true)}>
+                        <button className="inventory__shop-btn" onClick={() => props.setShopOpened(true)}>
                             <img src="/img/general/shop.svg" alt="" />
                             Магазин
                         </button>

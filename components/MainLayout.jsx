@@ -7,12 +7,11 @@ import Modal from "./modals/Modal"
 import Settings from "./modals/Settings"
 import Shop from "./modals/Shop"
 
-const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass }) => {
+const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass, shopOpened }) => {
 	const [auth, setAuth] = useState(true)
 
 	const [depositState, setDepositState] = useState(false)
 	const [settingsState, setSettingsState] = useState(false)
-	const [shopState, setShopState] = useState(false)
 
 	return (
 		<>
@@ -20,29 +19,27 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass }) => 
 				<title>{title}</title>
 			</Head>
 
-			{/* МОДАЛЬНЫЕ ОКНА */}
-			<Modal state={depositState} setState={setDepositState}>
-				<Deposit close={() => setDepositState(false)} />
-			</Modal>
-			<Modal state={settingsState} setState={setSettingsState}>
-				<Settings close={() => setSettingsState(false)} />
-			</Modal>
-			<Modal state={shopState} setState={setShopState}>
-				<Shop close={() => setShopState(false)} />
-			</Modal>
+			<div className={`wrapper ${shopOpened ? "shop-opened" : ""}`}>
+				{/* МОДАЛЬНЫЕ ОКНА */}
+				<Modal state={depositState} setState={setDepositState}>
+					<Deposit close={() => setDepositState(false)} />
+				</Modal>
+				<Modal state={settingsState} setState={setSettingsState}>
+					<Settings close={() => setSettingsState(false)} />
+				</Modal>
 
-			<Header
-				openDepositModal={() => setDepositState(true)}
-				openSettingsModal={() => setSettingsState(true)}
-				openShopModal={() => setShopState(true)}
-				auth={auth}
-				setAuth={setAuth}
-			/>
-			<div className={`content ${hideChat ? "full" : ""}`}>
-				<Chat hide={hideChat}/>
-				<main className={mainClass}>
-					{children}
-				</main>
+				<Header
+					openDepositModal={() => setDepositState(true)}
+					openSettingsModal={() => setSettingsState(true)}
+					auth={auth}
+					setAuth={setAuth}
+				/>
+				<div className={`content ${hideChat ? "full" : ""}`}>
+					<Chat hide={hideChat}/>
+					<main className={mainClass}>
+						{children}
+					</main>
+				</div>
 			</div>
 		</>
 	)

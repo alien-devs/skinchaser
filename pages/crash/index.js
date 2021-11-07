@@ -2,12 +2,15 @@ import MainLayout from "../../components/MainLayout"
 import Statistics from "../../components/Statistics"
 import Inventory from "../../components/Inventory"
 import { useState } from "react"
+import Ava from "../../components/Ava"
 
-const Crash = () => {
+const Crash = (props) => {
 	const [x, setX] = useState(3)
 
 	return (
-		<MainLayout>
+		<MainLayout
+			shopOpened={props.shopOpened}
+		>
 			<div className="crash-page">
 				<div className="crash_left">
 					<div>
@@ -54,7 +57,10 @@ const Crash = () => {
 								</div>
 							</div>
 						</div>
-						<Inventory />
+						<Inventory
+							shopOpened={props.shopOpened}
+							setShopOpened={props.setShopOpened}
+						/>
 					</div>
 				</div>
 				<div className="crash_right">
@@ -149,11 +155,7 @@ const Crash = () => {
 						<div className="crash_current_bet">
 							<div className="crash_current_heading">
 								<div className="card_current_bet_info">
-									<img
-										src="/img/crash/logo.png"
-										alt=""
-										className="crash_bet_logo"
-									/>
+									<Ava withBg/>
 									<div className="card_current_bet_stats">
 										<h2 className="crash_bet_nickname">
 											DigitalNox Design
@@ -198,11 +200,7 @@ const Crash = () => {
 						<div className="crash_current_bet">
 							<div className="crash_current_heading">
 								<div className="card_current_bet_info">
-									<img
-										src="/img/crash/logo.png"
-										alt=""
-										className="crash_bet_logo"
-									/>
+									<Ava withBg/>
 									<div className="card_current_bet_stats">
 										<h2 className="crash_bet_nickname">
 											DigitalNox Design
@@ -247,11 +245,7 @@ const Crash = () => {
 						<div className="crash_current_bet">
 							<div className="crash_current_heading">
 								<div className="card_current_bet_info">
-									<img
-										src="/img/crash/logo.png"
-										alt=""
-										className="crash_bet_logo"
-									/>
+									<Ava withBg/>
 									<div className="card_current_bet_stats">
 										<h2 className="crash_bet_nickname">
 											DigitalNox Design
@@ -282,11 +276,7 @@ const Crash = () => {
 						<div className="crash_current_bet">
 							<div className="crash_current_heading">
 								<div className="card_current_bet_info">
-									<img
-										src="/img/crash/logo.png"
-										alt=""
-										className="crash_bet_logo"
-									/>
+									<Ava withBg/>
 									<div className="card_current_bet_stats">
 										<h2 className="crash_bet_nickname">
 											DigitalNox Design
@@ -317,11 +307,7 @@ const Crash = () => {
 						<div className="crash_current_bet">
 							<div className="crash_current_heading">
 								<div className="card_current_bet_info">
-									<img
-										src="/img/crash/logo.png"
-										alt=""
-										className="crash_bet_logo"
-									/>
+									<Ava withBg/>
 									<div className="card_current_bet_stats">
 										<h2 className="crash_bet_nickname">
 											DigitalNox Design
@@ -352,11 +338,7 @@ const Crash = () => {
 						<div className="crash_current_bet">
 							<div className="crash_current_heading">
 								<div className="card_current_bet_info">
-									<img
-										src="/img/crash/logo.png"
-										alt=""
-										className="crash_bet_logo"
-									/>
+									<Ava withBg/>
 									<div className="card_current_bet_stats">
 										<h2 className="crash_bet_nickname">
 											DigitalNox Design

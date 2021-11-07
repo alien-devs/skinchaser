@@ -368,6 +368,27 @@ h5 {
     path {
         width: 58px;
     }
+
+	&.with-bg {
+		padding: 15px;
+		padding-left: 16px;
+		// background: url("/img/general/we2.svg") no-repeat center center;
+		position: relative;
+
+		.svg {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 0;
+			width: 120%;
+		}
+
+		svg {
+			z-index: 1;
+			position: relative;
+		}
+	}
 }
 
 .playerStatus {

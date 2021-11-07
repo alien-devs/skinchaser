@@ -1,16 +1,20 @@
+import Ava from "../../components/Ava"
 import Inventory from "../../components/Inventory"
 import MainLayout from "../../components/MainLayout"
 import Statistics from "../../components/Statistics"
 import { ar } from "../../data/arrays"
 
-const Jackpot = () => {
+const Jackpot = (props) => {
     const bets = [1, 1, 1, 1, 1]
 
     return (
         <MainLayout>
             <div className="jackpot-page">
                 <div>
-                    <Inventory />
+                    <Inventory
+                        shopOpened={props.shopOpened}
+                        setShopOpened={props.setShopOpened}
+                    />
                 </div>
                 <div>
                     <Statistics />
@@ -85,7 +89,7 @@ const Jackpot = () => {
                                     <div className="jackpot__bet-heading">
                                         <div>
                                             <div className="ava">
-                                                <img src="/img/general/ava.png"/>
+                                                <Ava withBg width="43"/>
                                             </div>
                                             <h2 className="user-name">
                                                 DigitalNox Design
