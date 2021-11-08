@@ -5,18 +5,18 @@ import Shop from "../modals/Shop"
 import { useState } from "react"
 
 const Inventory = (props) => {
-    // if(true) {
-    //     return (
-    //         <div className="inventory">
-    //             <div className="empty-inventory">
-    //                 <span>Авторизуйтесь на сайте чтобы использовать</span>
-    //                 <button className="primary-btn">
-    //                     Авторизация
-    //                 </button>
-    //             </div>
-    //         </div>
-    //     )
-    // }
+    if(props.auth != null ? !props.auth : false) {
+        return (
+            <div className="inventory empty">
+                <div className="empty-inventory">
+                    <span>Авторизуйтесь на сайте чтобы использовать</span>
+                    <button className="primary-btn">
+                        Авторизация
+                    </button>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <>

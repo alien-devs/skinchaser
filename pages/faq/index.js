@@ -61,9 +61,12 @@ const Dropdown = ({ isOpen }) => {
 	)
 }
 
-const Faq = () => {
+const Faq = (props) => {
 	return (
-		<MainLayout>
+		<MainLayout
+			auth={props.auth}
+			setAuth={props.setAuth}
+		>
 			<div className="faq_page">
 				<h1 className="faq_page_title">Часто задаваемые вопросы</h1>
 				<div className="faq_page_list">

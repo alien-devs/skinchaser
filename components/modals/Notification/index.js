@@ -4,7 +4,7 @@ const Notification = (props) => {
 	return (
 		<CSSTransition in={props.state} unmountOnExit timeout={200} classNames="modal">
 			<div className="notification">
-				<img src="/img/notification/arrow.svg" alt="" />
+				<img src="/img/notification/arrow.svg" alt="" className="arrow"/>
 				<div className="notification_row">
 					<p>21.10.2021</p>
 					<h2>

@@ -445,3 +445,34 @@
         }
     }
 }
+
+@media all and (min-height: 1200px) {
+    .profile_right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_page {
+        min-height: calc(100vh - 151px);
+
+        & > div {
+            height: 100%;
+        }
+    }
+
+    .profile_referal, .profile_inventory {
+        flex-grow: 1;
+    }
+
+    .profile_referal {
+        justify-content: space-between;
+    }
+
+    .shop_left_inventory {
+        height: calc(100vh - 481px);
+    }
+
+    .not-auth-crash {
+        height: 100%;
+    }
+}

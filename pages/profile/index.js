@@ -3,9 +3,12 @@ import Item from "../../components/Item"
 import Dropdown from "../../components/Dropdown"
 import { ar } from "../../data/arrays"
 
-const Profile = () => {
+const Profile = (props) => {
 	return (
-		<MainLayout>
+		<MainLayout
+			auth={props.auth}
+			setAuth={props.setAuth}
+		>
 			<div className="profile_page">
 				<div className="profile_left">
 					<div className="profile_info_list">

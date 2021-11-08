@@ -4,62 +4,79 @@ import Inventory from "../../components/Inventory"
 import { useState } from "react"
 import Ava from "../../components/Ava"
 
+const UnauthCrash = () => {
+	return (
+		<div className="empty-crash">
+			<img src="/img/crash/anime.png" alt="" />
+			<p>Авторизуйтесь чтобы сделать ставку</p>
+		</div>
+	)
+}
+
 const Crash = (props) => {
 	const [x, setX] = useState(3)
 
 	return (
 		<MainLayout
 			shopOpened={props.shopOpened}
+			auth={props.auth}
+			setAuth={props.setAuth}
 		>
 			<div className="crash-page">
 				<div className="crash_left">
-					<div>
+					<div className={!props.auth && "not-auth-crash"}>
 						<div className="crash_bet">
-							<div className="topSide">
-								<div className="gallery">
-									<img src="/img/crash/m4.png" alt="" />
-									<img src="/img/crash/m4.png" alt="" />
-									<img src="/img/crash/m4.png" alt="" />
-								</div>
-								<h2>M4A4</h2>
-								<p>Магний</p>
-							</div>
-							<div className="line"></div>
-							<div className="bottomSide">
-								<div className="arrow">
-									<svg
-										width="9"
-										height="14"
-										viewBox="0 0 9 14"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M6.77733 0.527405L0.305664 6.99999L6.77733 13.4726L8.7225 11.5274L4.19416 6.99999L8.7225 2.47257L6.77733 0.527405Z"
-											fill="#8A8C8D"
-										/>
-									</svg>
-								</div>
-								<div className="counter">8/20</div>
-								<div className="arrow">
-									<svg
-										width="9"
-										height="14"
-										viewBox="0 0 9 14"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2.22267 0.527405L8.69434 6.99999L2.22267 13.4726L0.277502 11.5274L4.80584 6.99999L0.277502 2.47257L2.22267 0.527405Z"
-											fill="white"
-										/>
-									</svg>
-								</div>
-							</div>
+							{
+								props.auth ? <>
+									<div className="topSide">
+										<div className="gallery">
+											<img src="/img/crash/m4.png" alt="" />
+											<img src="/img/crash/m4.png" alt="" />
+											<img src="/img/crash/m4.png" alt="" />
+										</div>
+										<h2>M4A4</h2>
+										<p>Магний</p>
+									</div>
+									<div className="line"></div>
+									<div className="bottomSide">
+										<div className="arrow">
+											<svg
+												width="9"
+												height="14"
+												viewBox="0 0 9 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M6.77733 0.527405L0.305664 6.99999L6.77733 13.4726L8.7225 11.5274L4.19416 6.99999L8.7225 2.47257L6.77733 0.527405Z"
+													fill="#8A8C8D"
+												/>
+											</svg>
+										</div>
+										<div className="counter">8/20</div>
+										<div className="arrow">
+											<svg
+												width="9"
+												height="14"
+												viewBox="0 0 9 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M2.22267 0.527405L8.69434 6.99999L2.22267 13.4726L0.277502 11.5274L4.80584 6.99999L0.277502 2.47257L2.22267 0.527405Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+									</div>
+								</> : <UnauthCrash />
+							}
 						</div>
 						<Inventory
 							shopOpened={props.shopOpened}
 							setShopOpened={props.setShopOpened}
+							auth={props.auth}
+							setAuth={props.setAuth}
 						/>
 					</div>
 				</div>
@@ -106,13 +123,13 @@ const Crash = (props) => {
 								</div>
 							</div>
 							<div className="crash_set_default">
-								<span className="crash_set_default_card light" onClick={() => setX(1.2)}>
+								<span className="crash_set_default_card" onClick={() => setX(1.2)}>
 									1.2x
 								</span>
-								<span className="crash_set_default_card dark" onClick={() => setX(2)}>
+								<span className="crash_set_default_card" onClick={() => setX(2)}>
 									2x
 								</span>
-								<span className="crash_set_default_card light" onClick={() => setX(3)}>
+								<span className="crash_set_default_card" onClick={() => setX(3)}>
 									3x
 								</span>
 								<span className="crash_set_default_card yellow" onClick={() => setX(4)}>

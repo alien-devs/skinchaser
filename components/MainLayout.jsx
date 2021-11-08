@@ -5,11 +5,8 @@ import Header from "./Header"
 import Deposit from "./modals/Deposit"
 import Modal from "./modals/Modal"
 import Settings from "./modals/Settings"
-import Shop from "./modals/Shop"
 
-const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass, shopOpened }) => {
-	const [auth, setAuth] = useState(true)
-
+const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass, shopOpened, auth, setAuth }) => {
 	const [depositState, setDepositState] = useState(false)
 	const [settingsState, setSettingsState] = useState(false)
 

@@ -8,7 +8,10 @@ const Jackpot = (props) => {
     const bets = [1, 1, 1, 1, 1]
 
     return (
-        <MainLayout>
+        <MainLayout
+            auth={props.auth}
+            setAuth={props.setAuth}
+        >
             <div className="jackpot-page">
                 <div>
                     <Inventory

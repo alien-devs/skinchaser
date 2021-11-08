@@ -6,11 +6,14 @@ import Dropdown from "../../components/Dropdown"
 import Slider from 'react-rangeslider'
 import { useState } from "react"
 
-const Shop = () => {
+const Shop = (props) => {
 	const [sliderValue, setSliderValue] = useState(50)
 
 	return (
-		<MainLayout>
+		<MainLayout
+			auth={props.auth}
+			setAuth={props.setAuth}
+		>
 			<div className="shop_page">
 				<div className="shop_left">
 					<h5 className="shop_left_title">Инвентарь</h5>

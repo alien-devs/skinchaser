@@ -5,7 +5,10 @@ import { ar } from "../../data/arrays"
 
 const Wheel = (props) => {
 	return (
-		<MainLayout>
+		<MainLayout
+			auth={props.auth}
+			setAuth={props.setAuth}
+		>
 			<div className="wheel-page">
 				<div className="wheel_left">
 					<div className="wheel_ratio_choose">

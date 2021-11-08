@@ -2,7 +2,7 @@ import Ava from "../../components/Ava"
 import Input from "../../components/Input"
 import MainLayout from "../../components/MainLayout"
 
-const Support = () => {
+const Support = (props) => {
 	const supportItems = [
 		{
 			title: "Не могу пополнить счёт",
@@ -70,7 +70,10 @@ const Support = () => {
 	}
 
 	return (
-		<MainLayout>
+		<MainLayout
+			auth={props.auth}
+			setAuth={props.setAuth}
+		>
 			<div className="support_page">
 				<div className="support_left">
 					<img src="/img/support/support_message.svg" alt="" />

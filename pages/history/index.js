@@ -1,10 +1,12 @@
 import MainLayout from "../../components/MainLayout"
 import { ar } from "../../data/arrays"
 
-const History = () => {
+const History = (props) => {
 	return (
 		<MainLayout
 			mainClass="main-gradient"
+			auth={props.auth}
+			setAuth={props.setAuth}
 		>
 			<div className="history_page">
 				<h1 className="history_page_cache_title">

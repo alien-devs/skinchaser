@@ -162,13 +162,15 @@
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 600;
+	transition: all .3s ease;
+	background: #2f3241;
 
-	&.light {
-		background: #2f3241;
+	&:hover {
+		background: #2a2c38;
 	}
 
-	&.dark {
-		background: #2a2c38;
+	&:active {
+		background: #3A3D50;
 	}
 
 	&.yellow {
@@ -481,5 +483,35 @@
 
 	.glow {
 		text-shadow: 0px 0px 18px #F69F1D;
+	}
+}
+
+.not-auth-crash {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 150px);
+
+	.inventory {
+		flex-grow: 1;
+	}
+}
+
+.empty-crash {
+	height: 375px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 65px 0 31px 0;
+
+	img {
+		width: 111px;
+	}
+
+	p {
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 18px;
+		color: #C5CDD6;
 	}
 }
