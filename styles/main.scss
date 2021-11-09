@@ -442,9 +442,19 @@ h5 {
 	}
 }
 
+.flag {
+	width: 24px;
+}
+
+.lang-switcher {
+	.popup {
+		width: 81px;
+	}
+}
+
 // !!!
 .shop-opened {
-	header, .chat {
+	header, .chat, .ava {
 		z-index: -1;
 	}
 }

@@ -10,6 +10,11 @@ const MainLayout = ({ children, hideChat, title = "Skinchaser", mainClass, shopO
 	const [depositState, setDepositState] = useState(false)
 	const [settingsState, setSettingsState] = useState(false)
 
+	// if (typeof window !== "undefined") {
+	// 	let scaling = window.devicePixelRatio
+	// 	document.body.style.zoom = 1 / scaling;
+	// }
+
 	return (
 		<>
 			<Head>

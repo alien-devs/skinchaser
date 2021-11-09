@@ -7,6 +7,9 @@ import { useOnClickOutside } from "../../lib/hooks"
 import Ava from "../Ava"
 
 const Header = (props) => {
+	const [lang, setLang] = useState("en-US")
+	const [langState, setLangState] = useState(false)
+
 	const [sound, setSound] = useState(true)
 	const [menu, setMenu] = useState(false)
 	const [notifications, setNotifications] = useState(false)
@@ -14,6 +17,16 @@ const Header = (props) => {
 
 	const notificationRef = useRef()
 	useOnClickOutside(notificationRef, () => setNotifications(false))
+
+	const langs = [
+		"ru",
+		"en-US"
+	]
+
+	const switchLang = (i) => {
+		setLang(i)
+		setLangState(false)
+	}
 
 	return (
 		<header className={s.header}>
@@ -34,14 +47,24 @@ const Header = (props) => {
 					>
 						<img src={`/img/header/sound${sound ? "" : "-off"}.svg`} alt="" />
 					</button>
-					<button id={s.lang} className="secondary-btn">
-						<img
-							src="/img/general/flags/uk.png"
-							alt=""
-							className={s.country}
-						/>
-						<img src="/img/general/arrow.svg" alt="" />
-					</button>
+
+					<div className={`lang-switcher primary-dropdown ${langState ? "opened" : ""}`}>
+						<button id={s.lang} className="secondary-btn" onClick={() => setLangState(!langState)}>
+							<img
+								src={`/img/general/flags/${lang}.png`}
+								alt=""
+								className={s.country}
+							/>
+							<img src="/img/general/arrow.svg" alt="" />
+						</button>
+						<div className="popup">
+							{
+								langs.map(i => i != lang && <li onClick={() => switchLang(i)}>
+									<img src={`/img/general/flags/${i}.png`} className="flag" alt="" />
+								</li>)
+							}
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className={s.burger} onClick={() => setMenu(!menu)}>
