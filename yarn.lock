@@ -712,6 +712,11 @@
     "locate-path" "^5.0.0"
     "path-exists" "^4.0.0"
 
+"forced-original-scale@^1.2.0":
+  "integrity" "sha512-W7eeAStu3BB8JH8QcxIZAm/LFZUMMVEAFrmXcYIMv1J87SNz6nld+1t6N2GssYsEQYeXq9XJWk51/u3IoAPtkQ=="
+  "resolved" "https://registry.npmjs.org/forced-original-scale/-/forced-original-scale-1.2.0.tgz"
+  "version" "1.2.0"
+
 "foreach@^2.0.5":
   "integrity" "sha1-C+4AUBiusmDQo6865ljdATbsG5k="
   "resolved" "https://registry.npmjs.org/foreach/-/foreach-2.0.5.tgz"

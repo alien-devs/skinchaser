@@ -277,9 +277,9 @@ const Crash = (props) => {
 									</div>
 								</div>
 								<div className="card_current_bet_row">
-									<img src="/img/crash/item.png" alt="" className="cs-skin milspec"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin covert"/>
 									<img src="/img/crash/item.png" alt="" className="cs-skin"/>
-									<img src="/img/crash/item.png" alt="" className="cs-skin pink"/>
+									<img src="/img/crash/item.png" alt="" className="cs-skin covert"/>
 									<img src="/img/crash/item.png" alt="" className="cs-skin gold"/>
 								</div>
 							</div>

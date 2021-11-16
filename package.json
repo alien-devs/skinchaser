@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "forced-original-scale": "^1.2.0",
     "next": "11.1.2",
     "next-translate": "^1.1.1",
     "react": "17.0.2",
