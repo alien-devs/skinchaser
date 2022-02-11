@@ -87,7 +87,7 @@ const Header = (props) => {
 				}
 			</nav>
 			{
-				!props.auth ? <button className="auth-btn primary-btn" onClick={() => props.setAuth(true)}>
+				props.auth ? <button className="auth-btn primary-btn" onClick={() => props.setAuth(true)}>
 					<img src="/img/general/steam.svg" />
 					Авторизация
 				</button> : <div className={s.right}>
